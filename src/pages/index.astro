@@ -18,6 +18,7 @@ const exampleEpisode = {
 ---
 
 <MainLayout>
+  <EpisodeFooter scores={episodes[0].scores} />
   <ul class="episodes">
     {episodes.map((episode) => <li>
         <EpisodeCard class="episode" episode={episode} />
@@ -28,7 +29,6 @@ const exampleEpisode = {
     <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
     <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
   </ul>
-  <EpisodeFooter />
 </MainLayout>
 
 <style>
