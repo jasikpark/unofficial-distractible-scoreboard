@@ -1,0 +1,40 @@
+---
+export interface Score {
+  character: "Mark" | "Bob" | "Wade";
+  score: number;
+}
+
+export interface Episode {
+  title: string;
+  description: string;
+  publishDate: string | Date;
+  scores: Score[];
+}
+
+import Score from "@components/Score.astro";
+
+export interface Props {
+  episode: Episode,
+};
+
+const { episode: { title, description, publishDate, scores }} = Astro.props as Props;
+
+
+---
+
+<style>
+.article {
+  
+}
+</style>
+
+<article>
+<h1>{episode.title}</h1>
+<time datetime={new Date(publishDate).toISOString()}>{new Date(publishDate).toDateString()}</time>
+<p>{episode.description}</p>
+<ol>
+{episode.scores.map((score) => (
+    <li><Score score={score}/></li>
+))}
+</ol>
+</article>

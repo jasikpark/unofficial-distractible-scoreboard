@@ -1,15 +1,9 @@
 ---
+import EpisodeCard from "@components/EpisodeCard.astro";
+import MainLayout from "@layouts/MainLayout.astro";
 ---
-<html lang="en">
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Welcome to Astro</title>
-</head>
-
-<body>
-	<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-</body>
-
-</html>
+<MainLayout>
+  <h1 class="hello">Welcome to <a href="https://astro.build/">Astro</a></h1>
+  <EpisodeCard episode={{ title: "hello", description: "world", scores: [{ name: "Mark", score: 99999999999 }] }}/>
+</MainLayout>
