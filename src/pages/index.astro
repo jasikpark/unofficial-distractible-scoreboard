@@ -2,6 +2,7 @@
 import EpisodeCard from "@components/EpisodeCard.astro";
 import MainLayout from "@layouts/MainLayout.astro";
 import EpisodeFooter from "@components/EpisodeFooter.astro";
+import episodes from "@src/episodes";
 const exampleEpisode = {
   episodeNumber: 1,
   title: "Hair",
@@ -18,6 +19,9 @@ const exampleEpisode = {
 
 <MainLayout>
   <ul class="episodes">
+    {episodes.map((episode) => <li>
+        <EpisodeCard class="episode" episode={episode} />
+      </li>)}
     <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
     <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
     <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
