@@ -6,14 +6,16 @@
   "scripts": {
     "start": "astro dev",
     "build": "astro build",
-    "format": "yarn prettier -w ."
+    "format": "yarn prettier -w .",
+    "lint:html-validate": "yarn build --quiet && html-validate dist/"
   },
   "devDependencies": {
     "astro": "^0.19.0-next.2",
-    "prettier": "^2.3.2",
-    "prettier-plugin-astro": "^0.0.1"
+    "html-validate": "^5.2.1",
+    "prettier": "^2.3.2"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "any-date-parser": "^1.4.6",
+    "tailwindcss": "^2.2.7"
   }
 }

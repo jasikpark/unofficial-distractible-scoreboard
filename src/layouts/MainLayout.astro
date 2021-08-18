@@ -1,18 +1,31 @@
 ---
 import HeadCommon from "@components/HeadCommon.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
+import MainHeader from "@components/MainHeader.astro";
+import MainFooter from "@components/MainFooter.astro";
 ---
+
 <html lang="en">
+  <head>
+    <HeadCommon />
+  </head>
 
-<head>
-	<HeadCommon/>
-</head>
-
-<body>
-    <Header/>
-	<slot/>
-	<Footer/>
-</body>
-
+  <body>
+    <div class="min-h-screen">
+      <MainHeader />
+      <main>
+        <slot />
+      </main>
+    </div>
+    <MainFooter />
+  </body>
 </html>
+
+<style>
+  html {
+    background-image: var(--gradient-blurple);
+    font-family: var(--font-default);
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+</style>

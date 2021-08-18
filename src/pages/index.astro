@@ -1,9 +1,58 @@
 ---
 import EpisodeCard from "@components/EpisodeCard.astro";
 import MainLayout from "@layouts/MainLayout.astro";
+import EpisodeFooter from "@components/EpisodeFooter.astro";
+const exampleEpisode = {
+  episodeNumber: 1,
+  title: "Hair",
+  description:
+    "Today the guys discuss all things hair (and the lack there of)! They warn of the dangers of hair removal, explore the strange hair" +
+    "trends of ancient Greek statues, and discuss sci-fi scenarios where the elite harvest hair and organs from the less fortunate.",
+  publishDate: "2021-05-17",
+  scores: [
+    { character: "Mark", score: 1060 },
+    { character: "Wade", score: 1050 },
+  ],
+};
 ---
 
 <MainLayout>
-  <h1 class="hello">Welcome to <a href="https://astro.build/">Astro</a></h1>
-  <EpisodeCard episode={{ title: "hello", description: "world", scores: [{ name: "Mark", score: 99999999999 }] }}/>
+  <ul class="episodes">
+    <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
+    <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
+    <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
+    <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
+    <li><EpisodeCard class="episode" episode={exampleEpisode} /></li>
+  </ul>
+  <EpisodeFooter />
 </MainLayout>
+
+<style>
+  .episodes > * + * {
+    padding-top: 1rem;
+  }
+  .episode {
+    margin-inline: auto;
+  }
+  .episodes li:nth-of-type(2n + 1) {
+    transform: translateX(-1em);
+  }
+  .episodes li:nth-of-type(3n + 1) {
+    transform: translateX(5em);
+  }
+  .episodes li:nth-of-type(4n + 1) {
+    transform: translateX(-2em);
+  }
+  .episodes li:nth-of-type(5n + 1) {
+    transform: translateX(9em);
+  }
+  .episodes li:nth-of-type(6n + 1) {
+    transform: translateX(-11em);
+  }
+  .episodes li:nth-of-type(7n + 1) {
+    transform: translateX(8em);
+  }
+  .episodes li:nth-of-type(8n + 1) {
+    transform: translateX(-7em);
+  }
+</style>

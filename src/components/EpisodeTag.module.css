@@ -1,0 +1,19 @@
+.tag {
+  background-color: var(--color-black);
+  padding: 0.5em;
+}
+
+.mark {
+  composes: tag;
+  color: var(--color-mark);
+}
+
+.bob {
+  composes: tag;
+  color: var(--color-bob);
+}
+
+.wade {
+  composes: tag;
+  color: var(--color-wade);
+}

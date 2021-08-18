@@ -1,14 +1,18 @@
 ---
+import styles from "@components/EpisodeTag.module.css";
+
 export interface Score {
   character: "Mark" | "Bob" | "Wade";
   score: number;
 }
 
 export interface Props {
-    score: Score,
-};
+  score: Score;
+}
 
-const { score } = Astro.props as Props;
+const {
+  score: { character, score },
+} = Astro.props as Props;
 ---
 
-{`${score.character} ${score.points}`}
+<div class={styles[character.toLowerCase()]}>{`${character} ${score}`}</div>
