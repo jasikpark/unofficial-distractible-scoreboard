@@ -1523,6 +1523,11 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+cqfill@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/cqfill/-/cqfill-0.6.0.tgz#7d5a1c17c0bde7bb6b60ffa6a57096371c5c9897"
+  integrity sha512-hX4FqIiwjlLWu032W9oLaUcLe/3L+udWFUi6YYwjRK4RGQANwg3UmfYbEDC9HS+n1XD6/Rbtr45xrmfQOCylkg==
+
 cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"

@@ -1,8 +1,14 @@
 <header>
   <h1>
-    <span class="unofficial">Unofficial</span>
-    <img src="/DISTRACTABLE-Logo.png" alt="Distractible" />
-    <span class="scoreboard">Scoreboard</span>
+    <a href="/">
+      <span class="unofficial">Unofficial</span>
+      <img
+        class="distractible"
+        src="/DISTRACTABLE-Logo.png"
+        alt="Distractible"
+      />
+      <span class="scoreboard">Scoreboard</span>
+    </a>
   </h1>
 </header>
 
@@ -12,16 +18,22 @@
     font-weight: bold;
 
     text-transform: uppercase;
+
+    color: var(--color-white);
     background-color: var(--color-black);
   }
-  h1 {
+
+  h1 a {
     font-size: var(--font-size-5, 36px);
     margin-block-start: 0;
     margin-block-end: 0;
     padding-block-start: 1rem;
     padding-block-end: 1rem;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "unofficial"
+      "distractible"
+      "scoreboard";
     align-items: center;
     justify-items: center;
   }
@@ -31,10 +43,15 @@
   span {
     width: max-content;
   }
-  span.unofficial {
+  .unofficial {
     color: var(--color-green);
+    grid-area: unofficial;
   }
-  span.scoreboard {
+  .distractible {
+    grid-area: distractible;
+  }
+  .scoreboard {
     color: var(--color-purple);
+    grid-area: scoreboard;
   }
 </style>

@@ -16,6 +16,7 @@
   --color-mark: hsla(360, 85%, 54%, 1);
   --color-wade: hsla(40, 97%, 55%, 1);
   --color-bob: hsla(183, 81%, 55%, 1);
+  --color-blurple: hsla(275, 46%, 46.5%, 1);
   --gradient-blurple: linear-gradient(
     111.21deg,
     #ab3fcd 9.58%,

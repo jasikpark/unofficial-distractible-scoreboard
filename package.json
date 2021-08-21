@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "any-date-parser": "1.4.6",
+    "cqfill": "0.6.0",
     "tailwindcss": "2.2.7"
   }
 }

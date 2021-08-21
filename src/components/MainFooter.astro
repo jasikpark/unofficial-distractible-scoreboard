@@ -1,10 +1,10 @@
 ---
-import styles from "@components/FooterLink.module.css";
+import { FooterLink } from "@components/FooterLink.module.css";
 ---
 
 <footer>
   <ul>
-    <li><a class={styles.FooterLink} href="#">Back to top</a></li>
+    <li><a class={FooterLink} href="#">Back to top</a></li>
     <slot />
   </ul>
   <span>
@@ -41,5 +41,8 @@ import styles from "@components/FooterLink.module.css";
     font-weight: 700;
     text-decoration: underline;
     font-size: 1.5rem;
+  }
+  span {
+    font-weight: 400;
   }
 </style>
