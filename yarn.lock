@@ -983,10 +983,10 @@ astring@^1.7.4:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.7.5.tgz#a7d47fceaf32b052d33a3d07c511efeec67447ca"
   integrity sha512-lobf6RWXb8c4uZ7Mdq0U12efYmpD1UFnyOWVJPTa3ukqZrMopav+2hdNu0hgBF0JIBFK9QgrBDfwYvh3DFJDAA==
 
-astro@0.19.3:
-  version "0.19.3"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-0.19.3.tgz#cad5c5952c0d56fcddf52ea9314b43c40724d9b9"
-  integrity sha512-UKhIDIfwNoxbGWSSwFu62g+kJmXgz1742bT4a31SqBLKV/LrrkiBKul88ZcQRDtb7m1pXjoR/6oyWOiLoAbI5A==
+astro@0.19.4:
+  version "0.19.4"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-0.19.4.tgz#43b94c7b41b9c56ffee0f9d46b80580e6f46e897"
+  integrity sha512-+mbOJ90sJdCnG9BPpobUajWxr6MDkZezD5K4WS3g5nD5T9icV5/jn1aIosnWJCP7ybcQ5Q00LIVIL2o+BoZicQ==
   dependencies:
     "@astrojs/markdown-support" "0.2.4"
     "@astrojs/parser" "0.18.6"
