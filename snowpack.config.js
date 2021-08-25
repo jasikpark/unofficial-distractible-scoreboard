@@ -5,4 +5,5 @@ export default {
     "@layouts": "./src/layouts",
     "@theme": "./src/theme",
   },
+  plugins: ["@snowpack/plugin-postcss"],
 };
