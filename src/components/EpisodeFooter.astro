@@ -2,29 +2,30 @@
 import styles from "@components/FooterLink.module.css";
 import characters from "@components/characters.module.css";
 import MainFooter from "@components/MainFooter.astro";
-export interface Score {
-  character: "Mark" | "Bob" | "Wade";
-  score: number;
-}
+import { Score } from "@src/episodes.ts";
+
 export interface Props {
   scores: Score[];
 }
 const { scores = [] } = Astro.props as Props;
+
 const [first, second, third] = scores.sort((a, b) => a.score < b.score);
-const getStyle = ({ character }) => characters[character.toLowerCase()];
+const getCharacterStyle = ({ character }: Score) =>
+  characters[character.toLowerCase()];
 ---
 
 <div class="end-results">
   <div>
-    Winner: <span class={getStyle(first)}>{first.character}</span>
-    <br /> With <span class={getStyle(first)}>{first.score}</span> points!
+    Winner: <span class={getCharacterStyle(first)}>{first.character}</span>
+    <br /> With <span class={getCharacterStyle(first)}>{first.score}</span> points!
   </div>
   <div>
-    <span class={getStyle(second)}>{second.character}</span> comes in second with
-    <span class={getStyle(second)}>{second.score}</span>
+    <span class={getCharacterStyle(second)}>{second.character}</span> comes in second
+    with
+    <span class={getCharacterStyle(second)}>{second.score}</span>
   </div>
   {third && <div>
-      (Also <span class={getStyle(third)}>{third.character}</span> got <span class={getStyle(third)}>
+      (Also <span class={getCharacterStyle(third)}>{third.character}</span> got <span class={getCharacterStyle(third)}>
         {third.score}
       </span> points??)
     </div>}

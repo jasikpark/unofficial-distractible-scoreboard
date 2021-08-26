@@ -1,20 +1,6 @@
 ---
-import styles from "@components/EpisodeTag.module.css";
 import parser from "any-date-parser";
-
-export interface Score {
-  character: "Mark" | "Bob" | "Wade";
-  score: number;
-}
-
-export interface Episode {
-  episodeNumber: number;
-  title: string;
-  description: string;
-  publishDate: string | Date;
-  scores: Score[];
-}
-
+import { Episode } from "@src/episodes.ts";
 import Score from "@components/Score.astro";
 
 export interface Props {
@@ -26,6 +12,7 @@ const {
   class: className,
   episode: { episodeNumber, title, description, publishDate, scores },
 } = Astro.props as Props;
+
 const parsedDate = parser.fromString(publishDate);
 const sortedScores = scores.sort((a, b) => a.score < b.score);
 const winner = sortedScores[0];
@@ -36,15 +23,16 @@ const winner = sortedScores[0];
     <h1>
       <a href={`${episodeNumber}`}>{`Episode ${episodeNumber}: ${title}`}</a>
     </h1>
-    <time datetime={parsedDate.toISOString()}
-      >Uploaded {parsedDate.toDateString()}</time>
+    {!parsedDate.invalid && <time datetime={parsedDate.toISOString()}>
+        Uploaded {parsedDate.toDateString()}
+      </time>}
   </div>
   <p>{description}</p>
   <ol>
     <li>
-      <div class={styles[winner.character.toLowerCase()]}>
+      <Score score={winner}>
         Winner: {winner.character}
-      </div>
+      </Score>
     </li>
     {sortedScores.map((score) => <li>
         <Score score={score} />
