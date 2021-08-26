@@ -1,0 +1,26 @@
+---
+import HeadCommon from "@components/HeadCommon.astro";
+---
+
+<head>
+  <HeadCommon />
+</head>
+<body>
+  <div>
+    <slot />
+  </div>
+</body>
+
+<style>
+  div {
+    contain: layout inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 5rem auto;
+    width: 700px;
+    outline: solid 5px black;
+  }
+  body {
+    background-color: #e5e5e5;
+  }
+</style>

@@ -1,0 +1,21 @@
+---
+import StoryboardLayout from "@layouts/StoryboardLayout.astro";
+import EpisodeCard from "@components/EpisodeCard.astro";
+import episodes from "@src/episodes.ts";
+const exampleEpisode = {
+  episodeNumber: 1,
+  title: "Hair",
+  description:
+    "Today the guys discuss all things hair (and the lack there of)! They warn of the dangers of hair removal, explore the strange hair" +
+    "trends of ancient Greek statues, and discuss sci-fi scenarios where the elite harvest hair and organs from the less fortunate.",
+  publishDate: "2021-05-17",
+  scores: [
+    { character: "Mark", score: 1060 },
+    { character: "Wade", score: 1050 },
+  ],
+};
+---
+
+<StoryboardLayout>
+  <EpisodeCard class="episode" episode={exampleEpisode} />
+</StoryboardLayout>
