@@ -10,7 +10,7 @@
     "lint:html-validate": "yarn build --quiet && html-validate dist/"
   },
   "devDependencies": {
-    "astro": "0.19.4",
+    "astro": "0.20.1",
     "html-validate": "5.3.0",
     "prettier": "2.3.2"
   },
