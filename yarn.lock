@@ -23,10 +23,10 @@
     unist-util-map "^3.0.0"
     unist-util-visit "^4.0.0"
 
-"@astrojs/parser@0.18.6":
-  version "0.18.6"
-  resolved "https://registry.yarnpkg.com/@astrojs/parser/-/parser-0.18.6.tgz#a3444818ae37898261eb51e120fd4428196fba42"
-  integrity sha512-aJyrZG2FKkOxgP/HcRLCI4q+iC2DTSjdYMKHSJKk7k/2aDpbAUWJ6Z3dGlWQ+vviK52wxm0PyDQh9YjYbEtLwA==
+"@astrojs/parser@0.20.2":
+  version "0.20.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/parser/-/parser-0.20.2.tgz#93747172c8acd738cad4a4c8240c5c1bf73d49de"
+  integrity sha512-HLATK/Bezd1lX/ph9WmMmVGUa/m79BC8bdjAbVE2iCPDnIeWSpPiERA5kYfRtxCcXp/EySllxECccHtrvT3hCQ==
   dependencies:
     acorn "^7.4.0"
     locate-character "^2.0.5"
@@ -1027,13 +1027,13 @@ astring@^1.7.4:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.7.5.tgz#a7d47fceaf32b052d33a3d07c511efeec67447ca"
   integrity sha512-lobf6RWXb8c4uZ7Mdq0U12efYmpD1UFnyOWVJPTa3ukqZrMopav+2hdNu0hgBF0JIBFK9QgrBDfwYvh3DFJDAA==
 
-astro@0.20.1:
-  version "0.20.1"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.1.tgz#607296e1c0ca9dbc2f9f32cd756d56df8b91dca6"
-  integrity sha512-KOFE+2jHaDxKBwgnaQkxp+sxDj1lhNr9rSICcwbtfnRWrIvqq2jvMqsJLpPWJ26yxYJMy9N0WYOiWjhSjV1p4A==
+astro@0.20.2:
+  version "0.20.2"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.2.tgz#329a55a500d52163822c9ce0c41d13f4052c7f55"
+  integrity sha512-eLIG7RlEYSpKqEnRvD2CAXCbjXhtVj8+UahKJ/KvYtjJRwcC6AQtbgnEyhGSdv8+4/mfkult9xvELUMfxY5JCA==
   dependencies:
     "@astrojs/markdown-support" "0.3.0"
-    "@astrojs/parser" "0.18.6"
+    "@astrojs/parser" "0.20.2"
     "@astrojs/prism" "0.2.2"
     "@astrojs/renderer-preact" "0.2.1"
     "@astrojs/renderer-react" "0.2.0"
