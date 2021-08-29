@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "astro": "0.20.3",
-    "html-validate": "5.4.0",
+    "html-validate": "5.4.1",
     "prettier": "2.3.2"
   },
   "dependencies": {
