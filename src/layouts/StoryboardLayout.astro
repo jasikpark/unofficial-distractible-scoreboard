@@ -5,28 +5,30 @@ const paths = (await import("@src/component-links")).default.map(
 );
 ---
 
-<head>
-  <HeadCommon />
-</head>
-<body>
-  <ul>
-    {paths.map((p) => <li>
-        <a href={p}>{p}</a>
-      </li>)}
-  </ul>
-  <div>
-    <slot />
-  </div>
-  <div>
-    <slot />
-  </div>
-  <div>
-    <slot />
-  </div>
-  <div>
-    <slot />
-  </div>
-</body>
+<html lang="en" class="storyboard">
+  <head>
+    <HeadCommon />
+  </head>
+  <body>
+    <ul>
+      {paths.map((p) => <li>
+          <a href={p}>{p}</a>
+        </li>)}
+    </ul>
+    <div>
+      <slot />
+    </div>
+    <div>
+      <slot />
+    </div>
+    <div>
+      <slot />
+    </div>
+    <div>
+      <slot />
+    </div>
+  </body>
+</html>
 
 <style>
   ul {
@@ -53,7 +55,7 @@ const paths = (await import("@src/component-links")).default.map(
   div:nth-of-type(4) {
     width: 1440px;
   }
-  html {
+  .storyboard {
     background-color: #e5e5e5;
   }
 </style>
