@@ -2,11 +2,12 @@
 import "@theme/theme.css";
 //import "modern-normalize/modern-normalize.css";
 import "tailwindcss/dist/base.css";
+const { title = "" } = Astro.props;
 ---
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<title>Welcome to Astro</title>
+<title>{title ? `${title} ` : ""} Unofficial Distractible Scoreboard</title>
 
 <script type="module">
   import { cqfill } from 'https://unpkg.com/cqfill@0.6.0/export/cqfill.mjs';

@@ -2,11 +2,12 @@
 import HeadCommon from "@components/HeadCommon.astro";
 import MainHeader from "@components/MainHeader.astro";
 import MainFooter from "@components/MainFooter.astro";
+const { title = "" } = Astro.props;
 ---
 
 <html lang="en" class="main-layout">
   <head>
-    <HeadCommon />
+    <HeadCommon title={title} />
   </head>
 
   <body>
