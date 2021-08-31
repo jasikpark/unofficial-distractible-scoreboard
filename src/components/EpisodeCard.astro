@@ -1,5 +1,6 @@
 ---
 import parser from "any-date-parser";
+import styles from "@components/EpisodeCard.module.css";
 import { Episode } from "@src/episodes.ts";
 import Score from "@components/Score.astro";
 
@@ -18,17 +19,17 @@ const sortedScores = scores.sort((a, b) => a.score < b.score);
 const winner = sortedScores[0];
 ---
 
-<article class={className}>
+<article class={`${className} ${styles.EpisodeCard}`.trim()}>
   <div>
-    <h1>
+    <h1 class={styles.Title}>
       <a href={`${episodeNumber}`}>{`Episode ${episodeNumber}: ${title}`}</a>
     </h1>
-    {!parsedDate.invalid && <time datetime={parsedDate.toISOString()}>
+    {!parsedDate.invalid && <time class={styles.Time} datetime={parsedDate.toISOString()}>
         Uploaded {parsedDate.toDateString()}
       </time>}
   </div>
   <p>{description}</p>
-  <ol>
+  <ol class={styles.ScoresList}>
     <li>
       <Score score={winner}>
         Winner: {winner.character}
@@ -39,42 +40,3 @@ const winner = sortedScores[0];
       </li>)}
   </ol>
 </article>
-
-<style>
-  article {
-    background-color: var(--color-white);
-    color: var(--color-black);
-    width: min(70vw, 1000px);
-    box-shadow: 16px 16px 0px 4px #000000;
-    padding: 1.5rem;
-    margin-block-start: 1rem;
-    margin-block-end: 2rem;
-    margin-inline-start: 1rem;
-    margin-inline-end: 1rem;
-    font-size: var(--font-size-5);
-    line-height: var(--line-height-5);
-  }
-  article > * + * {
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-  }
-  time {
-    display: block;
-    font-size: var(--font-size-3);
-  }
-  ol {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    gap: 1rem;
-  }
-  h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  h1 a {
-    color: var(--color-black);
-    text-decoration: underline;
-  }
-</style>

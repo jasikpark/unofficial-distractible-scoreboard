@@ -18,7 +18,6 @@ const exampleEpisode = {
 ---
 
 <MainLayout>
-  <EpisodeFooter scores={episodes[0].scores} />
   <ul class="episodes">
     {episodes.map((episode) => <li>
         <EpisodeCard class="episode" episode={episode} />
@@ -34,6 +33,7 @@ const exampleEpisode = {
 <style>
   .episodes {
     padding-block: 2rem;
+    width: min(70vw, 1000px);
   }
   .episodes > * + * {
     padding-top: 1rem;

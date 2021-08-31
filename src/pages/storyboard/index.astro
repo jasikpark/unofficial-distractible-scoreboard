@@ -1,0 +1,25 @@
+---
+import HeadCommon from "@components/HeadCommon.astro";
+const paths = (await import("@src/component-links")).default.map(
+  (x) => new URL(`/storyboard/${x}`, Astro.site)
+);
+---
+
+<head><HeadCommon /></head>
+<body>
+  <ul>
+    {paths.map((p) => <li>
+        <a href={p}>{p}</a>
+      </li>)}
+  </ul>
+</body>
+
+<style>
+  ul {
+    margin: 5rem auto;
+    width: max-content;
+  }
+  body {
+    background-color: #e5e5e5;
+  }
+</style>

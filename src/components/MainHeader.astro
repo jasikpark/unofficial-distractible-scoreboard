@@ -1,69 +1,17 @@
-<header>
+---
+import styles from "./MainHeader.module.css";
+const { header, titleLink, unofficial, distractible, scoreboard } = styles;
+---
+
+<header class={header}>
   <h1>
-    <a href="/">
-      <span class="unofficial">Unofficial</span>
+    <a class={titleLink} href="/">
+      <span class={unofficial}>Unofficial</span>
       <img
-        class="distractible"
+        class={distractible}
         src="/DISTRACTABLE-Logo.png"
-        alt="Distractible"
-      />
-      <span class="scoreboard">Scoreboard</span>
+        alt="Distractible" />
+      <span class={scoreboard}>Scoreboard</span>
     </a>
   </h1>
 </header>
-
-<style>
-  header {
-    font-family: var(--font-default);
-    font-weight: bold;
-
-    text-transform: uppercase;
-
-    color: var(--color-white);
-    background-color: var(--color-black);
-  }
-
-  h1 a {
-    font-size: var(--font-size-5, 36px);
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-block-start: 1rem;
-    padding-block-end: 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "unofficial"
-      "distractible"
-      "scoreboard";
-    align-items: center;
-    justify-items: center;
-  }
-  img {
-    width: 100%;
-  }
-  span {
-    width: max-content;
-  }
-  .unofficial {
-    color: var(--color-green);
-    grid-area: unofficial;
-  }
-  .distractible {
-    grid-area: distractible;
-  }
-  .scoreboard {
-    color: var(--color-purple);
-    grid-area: scoreboard;
-  }
-  @media (min-width: 800px) {
-    h1 a {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "unofficial distractible scoreboard";
-    }
-  }
-  @media (min-width: 1000px) {
-    h1 a {
-      grid-template-columns: 1fr 2fr 1fr;
-    }
-  }
-</style>

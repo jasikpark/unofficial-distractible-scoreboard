@@ -1,0 +1,10 @@
+---
+import StoryboardLayout from "@layouts/StoryboardLayout.astro";
+import EpisodeFooter from "@components/EpisodeFooter.astro";
+const scores = [
+  { character: "Mark", score: 1060 },
+  { character: "Wade", score: 1050 },
+];
+---
+
+<StoryboardLayout><EpisodeFooter scores={scores} /></StoryboardLayout>

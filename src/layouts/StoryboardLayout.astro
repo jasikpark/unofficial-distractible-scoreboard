@@ -1,23 +1,68 @@
 ---
 import HeadCommon from "@components/HeadCommon.astro";
+const paths = (await import("@src/component-links")).default.map(
+  (x) => new URL(`/storyboard/${x}`, Astro.site)
+);
 ---
 
 <head>
   <HeadCommon />
 </head>
 <body>
+  <ul>
+    {paths.map((p) => <li>
+        <a href={p}>{p}</a>
+      </li>)}
+  </ul>
+  <div>
+    <slot />
+  </div>
+  <div>
+    <slot />
+  </div>
+  <div>
+    <slot />
+  </div>
   <div>
     <slot />
   </div>
 </body>
 
 <style>
-  div {
+  ul {
+    margin: 5rem auto;
+    width: max-content;
+  }
+  div:nth-of-type(1) {
     contain: layout inline-size;
     resize: horizontal;
     overflow: auto;
     margin: 5rem auto;
-    width: 700px;
+    width: 300px;
+    outline: solid 5px black;
+  }
+  div:nth-of-type(2) {
+    contain: layout inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 5rem auto;
+    width: 728px;
+    outline: solid 5px black;
+  }
+  div:nth-of-type(3) {
+    contain: layout inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 5rem auto;
+    width: 1080px;
+    outline: solid 5px black;
+  }
+  div:nth-of-type(4) {
+    contain: layout inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 5rem auto;
+    width: 1440px;
     outline: solid 5px black;
   }
   body {
