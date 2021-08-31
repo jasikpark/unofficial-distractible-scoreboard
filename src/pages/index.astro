@@ -1,6 +1,7 @@
 ---
-import EpisodeCard from "@components/EpisodeCard.astro";
 import MainLayout from "@layouts/MainLayout.astro";
+import AllTimeScoreboard from "@components/AllTimeScoreboard.astro";
+import EpisodeCard from "@components/EpisodeCard.astro";
 import EpisodeFooter from "@components/EpisodeFooter.astro";
 import episodes from "@src/episodes.ts";
 const exampleEpisode = {
@@ -15,9 +16,14 @@ const exampleEpisode = {
     { character: "Wade", score: 1050 },
   ],
 };
+const allTimeScores = [
+  { character: "Mark", score: 1060 },
+  { character: "Wade", score: 1050 },
+];
 ---
 
 <MainLayout>
+  <AllTimeScoreboard scores={allTimeScores} />
   <ul class="episodes">
     {episodes.map((episode) => <li>
         <EpisodeCard class="episode" episode={episode} />
