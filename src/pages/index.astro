@@ -1,5 +1,6 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
+import Intro from "@components/Intro.astro";
 import AllTimeScoreboard from "@components/AllTimeScoreboard.astro";
 import EpisodeCard from "@components/EpisodeCard.astro";
 import EpisodeFooter from "@components/EpisodeFooter.astro";
@@ -23,6 +24,7 @@ const allTimeScores = [
 ---
 
 <MainLayout>
+  <Intro />
   <AllTimeScoreboard scores={allTimeScores} />
   <ul class="episodes">
     {episodes.map((episode) => <li>
@@ -40,12 +42,10 @@ const allTimeScores = [
   .episodes {
     padding-block: 2rem;
     width: min(70vw, 1000px);
+    margin-inline: auto;
   }
   .episodes > * + * {
     padding-top: 1rem;
-  }
-  .episode {
-    margin-inline: auto;
   }
   .episodes li:nth-of-type(2n + 1) {
     transform: translateX(-1em);

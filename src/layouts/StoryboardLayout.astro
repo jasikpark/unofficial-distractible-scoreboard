@@ -3,10 +3,10 @@ import HeadCommon from "@components/HeadCommon.astro";
 const paths = (await import("@src/component-links")).default.map(
   (x) => new URL(`/storyboard/${x}`, Astro.site)
 );
-const { title = "" } = Astro.props;
+const { title = "", dark = false } = Astro.props;
 ---
 
-<html lang="en" class="storyboard">
+<html lang="en" class={`storyboard ${dark ? "dark" : ""}`.trim()}>
   <head>
     <HeadCommon title={title} />
   </head>
@@ -42,7 +42,7 @@ const { title = "" } = Astro.props;
     overflow: auto;
     margin: 5rem auto;
     width: 300px;
-    outline: solid 5px black;
+    outline: solid 5px currentColor;
   }
   div:nth-of-type(1) {
     width: 300px;
@@ -57,6 +57,11 @@ const { title = "" } = Astro.props;
     width: 1440px;
   }
   :global(html.storyboard) {
-    background-color: #e5e5e5;
+    color: var(--color-black);
+    background-color: hsl(0, 0%, 89.8%);
+  }
+  :global(html.storyboard.dark) {
+    color: var(--color-white);
+    background-color: hsl(0, 0%, 45%);
   }
 </style>
