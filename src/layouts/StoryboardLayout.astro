@@ -12,6 +12,7 @@ const { title = "", dark = false } = Astro.props;
   </head>
   <body>
     <ul>
+      <li><a href={Astro.site}>{Astro.site}</a></li>
       {paths.map((p) => <li>
           <a href={p}>{p}</a>
         </li>)}
