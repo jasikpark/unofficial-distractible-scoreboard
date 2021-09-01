@@ -8,6 +8,8 @@
 
 // @ts-check
 export default /** @type {import('astro').AstroUserConfig} */ ({
-  site: "https://unofficial-distractible-scoreboard.netlify.app/",
+  buildOptions: {
+    site: "https://unofficial-distractible-scoreboard.netlify.app/",
+  },
   renderers: [],
 });
