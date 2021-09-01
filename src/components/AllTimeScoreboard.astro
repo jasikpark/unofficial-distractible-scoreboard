@@ -27,7 +27,7 @@ const { scores = [] } = Astro.props as Props;
   }
 
   section > * + * {
-    padding-top: 1rem;
+    padding-top: 0.5em;
   }
 
   h1,
@@ -35,5 +35,11 @@ const { scores = [] } = Astro.props as Props;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
   }
 </style>
