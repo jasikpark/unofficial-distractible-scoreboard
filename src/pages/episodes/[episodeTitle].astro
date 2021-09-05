@@ -3,6 +3,7 @@ import MainLayout from "@layouts/MainLayout.astro";
 import FinalScores from "@components/FinalScores.astro";
 import styles from "@components/FooterLink.module.css";
 import slug from "slug";
+import { format } from "node:util";
 
 export async function getStaticPaths() {
   const episodes = (await import("@src/episodes.ts")).default;
@@ -26,8 +27,12 @@ const {episode} = Astro.props;
   <div>Host: {episode.host}</div>
   <div>Presenters: not {episode.host} lol</div>
 </section>
-<div>Timestamp UI with a bunch of timestamps!!!</div>
-
+<h2>Timestamp UI with a lotta timestamps!!!</h2>
+<pre><code>{format(episode)}</code></pre>
+<div id="episode-next-prev">
+  <a href="#">Previous Episode</a>
+  <a href="#">Next Episode</a>
+</div>
 {episode.scores ? <FinalScores scores={episode.scores}/> : ""}
 <Fragment slot="footer">
   <li>
