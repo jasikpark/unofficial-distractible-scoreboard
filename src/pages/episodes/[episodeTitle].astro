@@ -1,0 +1,43 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import FinalScores from "@components/FinalScores.astro";
+import styles from "@components/FooterLink.module.css";
+import Debug from "astro/debug";
+import slug from "slug";
+
+export async function getStaticPaths() {
+  const episodes = (await import("@src/episodes.ts")).default;
+  return episodes.map((episode) => {
+    return { 
+        params: { episodeTitle: slug(episode.title) },
+        props: { episode }
+    };
+  })
+}
+
+const {episodeTitle} = Astro.request.params;
+const {episode} = Astro.props;
+---
+
+<MainLayout>
+<a href="{Astro.site}">&lt;- Episodes</a>
+<h1>Episode {episode.episodeNumber}: {episodeTitle}</h1>
+<section id="episode-blurb">
+  <blockquote>{episode.description}</blockquote>
+  <div>Host: {episode.host}</div>
+  <div>Presenters: not {episode.host} lol</div>
+</section>
+<div>Timestamp UI with a bunch of timestamps!!!</div>
+
+<Debug {episode}/>
+
+{episode.scores ? <FinalScores scores={episode.scores}/> : ""}
+<Fragment slot="footer">
+  <li>
+    <a
+      class={styles.FooterLink}
+      href="https://github.com/jasikpark/unofficial-distractible-scoreboard/"
+      >Edit on Github</a>
+  </li>
+</Fragment>
+</MainLayout>

@@ -1,10 +1,10 @@
 ---
 import StoryboardLayout from "@layouts/StoryboardLayout.astro";
-import EpisodeFooter from "@components/EpisodeFooter.astro";
+import FinalScores from "@components/FinalScores.astro";
 const scores = [
   { character: "Mark", score: 1060 },
   { character: "Wade", score: 1050 },
 ];
 ---
 
-<StoryboardLayout><EpisodeFooter scores={scores} /></StoryboardLayout>
+<StoryboardLayout><FinalScores scores={scores} /></StoryboardLayout>

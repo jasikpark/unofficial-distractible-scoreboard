@@ -17,7 +17,9 @@ const { title = "" } = Astro.props;
         <slot />
       </main>
     </div>
-    <MainFooter />
+    <MainFooter>
+    <slot name="footer"/>
+    </MainFooter>
   </body>
 </html>
 

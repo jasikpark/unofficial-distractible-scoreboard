@@ -3,6 +3,7 @@ import parser from "any-date-parser";
 import styles from "@components/EpisodeCard.module.css";
 import { Episode } from "@src/episodes.ts";
 import Score from "@components/Score.astro";
+import slug from "slug";
 
 export interface Props {
   class: string;
@@ -22,7 +23,7 @@ const winner = sortedScores[0];
 <article class={`${className} ${styles.EpisodeCard}`.trim()}>
   <div>
     <h1 class={styles.Title}>
-      <a href={`${episodeNumber}`}>{`Episode ${episodeNumber}: ${title}`}</a>
+      <a href={new URL(`/episodes/${slug(title)}`, Astro.site)}>{`Episode ${episodeNumber}: ${title}`}</a>
     </h1>
     {!parsedDate.invalid && <time class={styles.Time} datetime={parsedDate.toISOString()}>
         Uploaded {parsedDate.toDateString()}
