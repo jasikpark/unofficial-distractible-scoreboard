@@ -1,5 +1,6 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
+import SkipLink from "@components/SkipLink.astro";
 import Intro from "@components/Intro.astro";
 import AllTimeScoreboard from "@components/AllTimeScoreboard.astro";
 import EpisodeCard from "@components/EpisodeCard.astro";
@@ -23,6 +24,7 @@ const allTimeScores = [
 ---
 
 <MainLayout>
+  <SkipLink href="#episodes" slot="skip-links">Skip to episodes list</SkipLink>
   <Intro />
   <AllTimeScoreboard scores={allTimeScores} />
   <ul id="episodes" class="episodes">

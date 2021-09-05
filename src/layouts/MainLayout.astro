@@ -1,5 +1,6 @@
 ---
 import HeadCommon from "@components/HeadCommon.astro";
+import SkipLink from "@components/SkipLink.astro";
 import MainHeader from "@components/MainHeader.astro";
 import MainFooter from "@components/MainFooter.astro";
 const { title = "" } = Astro.props;
@@ -12,8 +13,10 @@ const { title = "" } = Astro.props;
 
   <body>
     <div class="min-h-screen">
+      <SkipLink/>
+      <slot name="skip-links"/>
       <MainHeader />
-      <main>
+      <main id="main">
         <slot />
       </main>
     </div>

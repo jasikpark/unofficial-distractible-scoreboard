@@ -1,0 +1,27 @@
+---
+const { href = "#main" } = Astro.props;
+---
+
+<a class="skip-link" {href}><slot>Skip to main content</slot></a>
+
+<style>
+.skip-link {
+  background: var(--color-white);
+  color: var(--color-black);
+  font-weight: 700;
+  left: 2em;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 999;
+  
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skip-link {
+    transition: transform 0.3s;
+  }
+}
+.skip-link:focus {
+  transform: translateY(0%);
+}
+</style>
