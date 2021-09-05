@@ -25,7 +25,7 @@ const allTimeScores = [
 <MainLayout>
   <Intro />
   <AllTimeScoreboard scores={allTimeScores} />
-  <ul class="episodes">
+  <ul id="episodes" class="episodes">
     {episodes.map((episode) => <li>
         <EpisodeCard class="episode" episode={episode} />
       </li>)}
