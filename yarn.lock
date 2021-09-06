@@ -949,10 +949,10 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-any-date-parser@1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/any-date-parser/-/any-date-parser-1.4.6.tgz#a1b6a24b6c96a68f99e044aefa3fc993f28c7972"
-  integrity sha512-5HWzGPR+Kyko4eNNuFG7tu1l04YGCdlRhHcVFrkF/lcZi0+UXdZ+VOluUywqNreFdssAcSMBvCFpc0SS4Be6mA==
+any-date-parser@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/any-date-parser/-/any-date-parser-1.5.1.tgz#152db2bbc8c9b8f8715f58952ae09657e27d008f"
+  integrity sha512-3fHJDprh78tWHXDqQ15iLbk/VDMsCq9ih0YTS8oAF8N7BKqurjRQkG7ZI4d+Cknh0TZ3aDqQ5WQvO2QGVLDK7A==
 
 anymatch@~3.1.2:
   version "3.1.2"
