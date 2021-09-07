@@ -19,7 +19,7 @@
     "any-date-parser": "1.5.1",
     "cqfill": "0.6.0",
     "slug": "5.1.0",
-    "tailwindcss": "2.2.10"
+    "tailwindcss": "2.2.11"
   },
   "postcss": {
     "plugins": {
