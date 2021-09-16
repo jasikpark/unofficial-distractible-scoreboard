@@ -9,11 +9,23 @@ const episodes = Astro.fetchContent("../episodes/**.md").sort(
   (a, b) => a["episode_number"] - b["episode_number"]
 );
 
-const allTimeScores = [
-  { character: "Mark", score: 1060 },
-  { character: "Wade", score: 1050 },
-  { character: "Bob", score: 950 },
-];
+const allTimeScores = episodes.reduce(
+  (allTimeScores, episode) => {
+    episode.scores.forEach((score) => {
+      allTimeScores[
+        allTimeScores.findIndex(
+          (allTimeScore) => allTimeScore.character === score.character
+        )
+      ].score += typeof score.score === "number" ? score.score : 0;
+    });
+    return allTimeScores;
+  },
+  [
+    { character: "Mark", score: 0 },
+    { character: "Wade", score: 0 },
+    { character: "Bob", score: 0 },
+  ]
+);
 ---
 
 <MainLayout>

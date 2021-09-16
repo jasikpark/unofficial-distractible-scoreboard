@@ -5,6 +5,7 @@ export interface Props {
   placement: string;
   score: Score;
 }
+import { formatScore } from "@src/utils.ts";
 const { score, placement } = Astro.props as Props;
 const getCharacterStyle = ({ character }: Score) =>
   characters[character.toLowerCase()];
@@ -35,7 +36,7 @@ const placements = (placement) => {
       fill="currentColor"></path>
   </svg>
   <span>{score.character}</span>
-  <span>{score.score}</span>
+  <span>{formatScore(score.score)}</span>
 </li>
 
 <style>
