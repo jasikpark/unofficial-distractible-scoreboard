@@ -5,12 +5,13 @@ export interface Props {
   scores: Score[];
 }
 const { scores = [] } = Astro.props as Props;
+const sortedScores = scores.sort((a, b) => a.score < b.score);
 ---
 
 <section>
   <h1>All Time Scores</h1>
   <ul>
-    {scores.map( (score, placement) => <AllTimeScore score={score} placement={placement} /> )}
+    {sortedScores.map( (score, placement) => <AllTimeScore score={score} placement={placement} /> )}
   </ul>
 </section>
 
@@ -24,6 +25,8 @@ const { scores = [] } = Astro.props as Props;
     text-transform: uppercase;
 
     padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   section > * + * {

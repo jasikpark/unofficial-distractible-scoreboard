@@ -1,88 +1,105 @@
 ---
+import { Markdown } from "astro/components";
 import MainLayout from "@layouts/MainLayout.astro";
 import FinalScores from "@components/FinalScores.astro";
+import Character from "@components/Character.astro";
 import styles from "@components/FooterLink.module.css";
 import slug from "slug";
 import { format } from "node:util";
 
+
+
 export async function getStaticPaths() {
-  const episodes = (await import("@src/episodes.ts")).default;
-  return episodes.map((episode) => {
-    return { 
+  const episodes = await Astro.fetchContent("../../episodes/*.md");
+  return episodes
+    .sort((a, b) => a["episode_number"] < b["episode_number"])
+    .map((episode) => {
+      
+      return {
         params: { episodeTitle: slug(episode.title) },
-        props: { episode }
-    };
-  })
+        props: { episode },
+      };
+    });
 }
 
-const {episodeTitle} = Astro.request.params;
-const {episode} = Astro.props;
+const { episodeTitle } = Astro.request.params;
+const { episode } = Astro.props;
 ---
 
 <MainLayout>
 <a class="back-to-episodes" href={`${Astro.site}#episodes`}>‹ Episodes</a>
-<h1>Episode {episode.episodeNumber}: {episodeTitle}</h1>
+<h1>Episode {episode['episode_number']}: {episodeTitle}</h1>
 <section class="episode-blurb">
   <blockquote>{episode.description}</blockquote>
   <div class="roles">
-  <div>Host: {episode.host}</div>
-  <div>Presenters: not {episode.host} lol</div>
+  <div>Host: <Character name={episode.host}/></div>
+  <div>Presenters: <Character name={episode.presenters[0]}/> & <Character name={episode.presenters[1]}/></div>
   </div>
 </section>
 <h2>Timestamp UI with a lotta timestamps!!!</h2>
 <pre><code>{format(episode)}</code></pre>
+<section class="content">
+<Markdown content={episode.astro.source} />
+</section>
 <div id="episode-next-prev" class="inter-episode-nav">
   <a href="#">Previous Episode</a>
   <a href="#">Next Episode</a>
 </div>
 {episode.scores ? <FinalScores scores={episode.scores}/> : ""}
-<Fragment slot="footer">
-  <li>
-    <a
-      class={styles.FooterLink}
-      href="https://github.com/jasikpark/unofficial-distractible-scoreboard/"
-      >Edit on Github</a>
-  </li>
-</Fragment>
+  <Fragment slot="footer">
+    <li>
+      <a
+        class={styles.FooterLink}
+        href="https://github.com/jasikpark/unofficial-distractible-scoreboard/"
+        >Edit on Github</a>
+    </li>
+  </Fragment>
 </MainLayout>
 
 <style>
-.back-to-episodes {
-  padding: 1em;
-  text-transform: uppercase;
-  font-size: var(--font-size-3);
-}
-h1 {
-  font-size: var(--font-size-7);
-  font-weight: 700;
-  margin-inline: auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-.episode-blurb {
+  .back-to-episodes {
+    padding: 1em;
+    text-transform: uppercase;
+    font-size: var(--font-size-3);
+  }
+  h1 {
+    font-size: var(--font-size-7);
+    font-weight: 700;
+    margin-inline: auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .episode-blurb {
     background-color: var(--color-black);
     color: var(--color-white);
-}
-.episode-blurb blockquote {
-  max-width: 50ch;
-  margin-inline: auto;
-  padding: 1em;
-  margin-block: 1em;
-  border-left: solid .23em hsla(0, 100%, 100%, 17%);
-}
-.roles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-
-}
-.inter-episode-nav {
-  padding: 1em;
-  gap: 1em;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  }
+  .episode-blurb blockquote {
+    max-width: 50ch;
+    margin-inline: auto;
+    padding: 1em;
+    margin-block: 1em;
+    border-left: solid 0.23em hsla(0, 100%, 100%, 17%);
+  }
+  .roles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+  .inter-episode-nav {
+    padding: 1em;
+    gap: 1em;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content {
+    padding: 1em;
+    max-width: min(50em, 100% - 2em);
+    margin-inline: auto;
+  }
+  .content > * + * {
+    padding-top: 1em;
+  }
 </style>

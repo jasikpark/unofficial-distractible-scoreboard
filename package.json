@@ -6,6 +6,7 @@
   "scripts": {
     "start": "astro dev",
     "build": "astro build",
+    "preview": "astro preview",
     "format": "yarn prettier -w .",
     "lint:html-validate": "yarn build --quiet && html-validate dist/"
   },
