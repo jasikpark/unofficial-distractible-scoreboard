@@ -2,12 +2,6 @@
 publish = "public/"
 command = "hugo --gc"
 
-[[plugins]]
-package = "netlify-plugin-cache-yarn2"
-
-[[plugins]]
-package = "netlify-plugin-debug-cache"
-
 [dev]
 command = "yarn start --site 'http://localhost:8888'"
 framework = "#custom"
