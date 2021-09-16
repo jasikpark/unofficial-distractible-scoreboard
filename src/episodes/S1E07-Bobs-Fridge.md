@@ -6,6 +6,13 @@ host: "Wade"
 presenters: ["Bob", "Mark"]
 winner: "Bob"
 description: "Bob RAGES while telling a story about trying to get a new fridge installed."
+scores:
+  - score: 200000
+    character: "Mark"
+  - score: 69
+    character: "Bob"
+  - score: 0
+    character: "Wade"
 ---
 
 # Bob's Fridge

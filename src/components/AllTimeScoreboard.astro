@@ -5,7 +5,7 @@ export interface Props {
   scores: Score[];
 }
 const { scores = [] } = Astro.props as Props;
-const sortedScores = scores.sort((a, b) => a.score < b.score);
+const sortedScores = scores.sort((a, b) => b.score - a.score);
 ---
 
 <section>

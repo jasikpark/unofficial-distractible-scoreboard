@@ -3,13 +3,14 @@ import styles from "@components/FooterLink.module.css";
 import characters from "@components/characters.module.css";
 import MainFooter from "@components/MainFooter.astro";
 import { Score } from "@src/episodes.ts";
+import { formatScore } from "@src/utils.ts";
 
 export interface Props {
   scores: Score[];
 }
 const { scores = [] } = Astro.props as Props;
 
-const [first, second, third] = scores.sort((a, b) => a.score < b.score);
+const [first, second, third] = scores.sort((a, b) => b.score - a.score);
 const getCharacterStyle = ({ character }: Score) =>
   characters[character.toLowerCase()];
 ---
@@ -17,20 +18,20 @@ const getCharacterStyle = ({ character }: Score) =>
 <div class="end-results">
   <div>
     Winner: <span class={getCharacterStyle(first)}>{first.character}</span>
-    <br /> With <span class={getCharacterStyle(first)}>{first.score}</span> points!
+    <br /> With <span class={getCharacterStyle(first)}
+      >{formatScore(first.score)}</span> points!
   </div>
   <div>
     <span class={getCharacterStyle(second)}>{second.character}</span> comes in second
     with
-    <span class={getCharacterStyle(second)}>{second.score}</span>
+    <span class={getCharacterStyle(second)}>{formatScore(second.score)}</span> points
   </div>
   {third && <div>
       (Also <span class={getCharacterStyle(third)}>{third.character}</span> got <span class={getCharacterStyle(third)}>
-        {third.score}
+        {formatScore(third.score)}
       </span> points??)
     </div>}
 </div>
-
 
 <style>
   .end-results {

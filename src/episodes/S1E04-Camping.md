@@ -7,11 +7,11 @@ presenters: ["Bob", "Mark"]
 winner: "Bob"
 description: "Mark recounts the legend of an insane creature from the Rocky Mountains. Bob explains how his formative kayaking trip almost ended like a horror movie, and Wade...well, Wade just does what Wade does..."
 scores:
-  - score: 1060
+  - score: 254
     character: "Mark"
-  - score: 1050
+  - score: 324
     character: "Bob"
-  - score: 400
+  - score: 0
     character: "Wade"
 ---
 

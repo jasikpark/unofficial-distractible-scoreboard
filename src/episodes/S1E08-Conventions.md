@@ -6,6 +6,13 @@ host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Wade"
 description: 'On this episode of the pod, the guys get nostalgic for conventions and all the good and bad that come with them. From notable failed attempts, to bizarre themes (like "pizza" and "baby"), to post-COVID predictions, conventions hold a special place in Mark, Bob, and Wade''s hearts.'
+scores:
+  - score: 0
+    character: "Mark"
+  - score: 1050
+    character: "Bob"
+  - score: 1151
+    character: "Wade"
 ---
 
 # Conventions

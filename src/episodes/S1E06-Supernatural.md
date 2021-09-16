@@ -6,6 +6,13 @@ host: "Mark"
 presenters: ["Bob", "Wade"]
 winner: "Wade"
 description: "Mark hosts as Bob and Wade trade scary stories. For Bob, it's a strange woman who catches children who stay out too late. For Wade, a true story about how the night after watching “Texas Chainsaw Massacre” may have been scarier than the movie itself!"
+scores:
+  - score: 0
+    character: "Mark"
+  - score: 0
+    character: "Bob"
+  - score: 7
+    character: "Wade"
 ---
 
 # Supernatural

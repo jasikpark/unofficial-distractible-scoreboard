@@ -6,7 +6,7 @@ import AllTimeScoreboard from "@components/AllTimeScoreboard.astro";
 import EpisodeCard from "@components/EpisodeCard.astro";
 
 const episodes = Astro.fetchContent("../episodes/**.md").sort(
-  (a, b) => a["episode_number"] < b["episode_number"]
+  (a, b) => a["episode_number"] - b["episode_number"]
 );
 
 const allTimeScores = [

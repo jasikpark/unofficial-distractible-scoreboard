@@ -6,6 +6,13 @@ host: "Mark"
 presenters: ["Bob", "Wade"]
 winner: "Bob"
 description: "The guys trade stories about how dumb kids can be: from inventing stupid games, to playing with banned toys, to somehow making it through all of it without a scratch."
+scores:
+  - score: 0
+    character: "Mark"
+  - score: 5
+    character: "Bob"
+  - score: 6
+    character: "Wade"
 ---
 
 # Kids Are stupid

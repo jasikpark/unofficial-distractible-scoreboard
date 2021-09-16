@@ -22,7 +22,8 @@ const {
 } = Astro.props as Props;
 
 const parsedDate = parser.fromString(publishDate);
-const sortedScores = scores.sort((a, b) => a.score < b.score);
+const sortedScores = scores.sort((a, b) => b.score - a.score);
+console.debug(sortedScores);
 const winner = sortedScores[0];
 ---
 

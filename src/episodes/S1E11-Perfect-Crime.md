@@ -6,6 +6,13 @@ host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Mark"
 description: 'This week Mark, Wade and Bob answer the age-old hypothetical question: what is the "perfect crime?"'
+scores:
+  - score: "definitely some points"
+    character: "Mark"
+  - score: "zero"
+    character: "Bob"
+  - score: "at least a few points"
+    character: "Wade"
 ---
 
 # Perfect Crime

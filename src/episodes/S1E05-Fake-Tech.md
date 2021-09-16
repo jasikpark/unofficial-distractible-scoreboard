@@ -6,6 +6,13 @@ host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Mark"
 description: "Bob prompts a discussion about technology that blurs the lines of reality in this hilarious episode full of gadget scams, 00’s game nostalgia, and if the mute button could exist for real life."
+scores:
+  - score: 250000
+    character: "Mark"
+  - score: 0
+    character: "Bob"
+  - score: 507
+    character: "Wade"
 ---
 
 # Fake Tech

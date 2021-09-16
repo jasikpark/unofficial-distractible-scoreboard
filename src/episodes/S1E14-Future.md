@@ -6,6 +6,13 @@ host: "Wade"
 presenters: ["Bob", "Mark"]
 winner: "Mark"
 description: "This week the guys talk about the future: expectations vs. reality. What did people in the past predict the future would be like? Were they accurate? Will we be accurate if we attempt to do the same…?"
+scores:
+  - score: 3030091
+    character: "Mark"
+  - score: 1000000
+    character: "Bob"
+  - score: 0
+    character: "Wade"
 ---
 
 # Future

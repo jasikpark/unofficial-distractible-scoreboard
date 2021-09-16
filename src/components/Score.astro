@@ -1,6 +1,7 @@
 ---
 import styles from "@components/EpisodeTag.module.css";
 import { Score } from "@src/episodes.ts";
+import { formatScore } from "@src/utils.ts";
 
 export interface Props {
   score: Score;
@@ -12,5 +13,5 @@ const {
 ---
 
 <div class={styles[character.toLowerCase()]}>
-  <slot>{`${character} ${score}`}</slot>
+  <slot>{`${character} ${formatScore(score)}`}</slot>
 </div>

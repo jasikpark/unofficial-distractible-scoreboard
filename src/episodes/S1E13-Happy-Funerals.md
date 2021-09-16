@@ -6,6 +6,13 @@ host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Wade"
 description: "Bob hosts, hoping Mark and Wade will discuss how they want their funerals to be. Instead, Mark offers “Santa’s Big Goodbye” and Wade describes what a Jackass funeral would be like!"
+scores:
+  - score: "nada"
+    character: "Mark"
+  - score: "none"
+    character: "Bob"
+  - score: "several points"
+    character: "Wade"
 ---
 
 # Happy Funerals

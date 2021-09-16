@@ -6,6 +6,13 @@ host: "Wade"
 presenters: ["Bob", "Mark"]
 winner: "Mark"
 description: "Wade hosts as Bob and Mark share some classic “hold my beer” moments from their college days…"
+scores:
+  - score: 1015
+    character: "Mark"
+  - score: 1014
+    character: "Bob"
+  - score: 0
+    character: "Wade"
 ---
 
 # Hold My Beer
