@@ -11,8 +11,6 @@ scores:
     character: "Mark"
   - score: 1000000
     character: "Bob"
-  - score: 0
-    character: "Wade"
 ---
 
 # Future

@@ -1,11 +1,12 @@
 ---
 import { Score } from "@src/episodes.ts";
 import AllTimeScore from "@components/AllTimeScore.astro";
+import { sortScores } from "@src/utils.ts";
 export interface Props {
   scores: Score[];
 }
 const { scores = [] } = Astro.props as Props;
-const sortedScores = scores.sort((a, b) => b.score - a.score);
+const sortedScores = scores.sort(sortScores);
 ---
 
 <section>

@@ -7,8 +7,6 @@ presenters: ["Bob", "Wade"]
 winner: "Bob"
 description: 'In front of a "live" Discord audience, the guys discuss synchronicities, déjà vu, mind-reading, and hive minds.'
 scores:
-  - score: 0
-    character: "Mark"
   - score: 4
     character: "Bob"
   - score: 0

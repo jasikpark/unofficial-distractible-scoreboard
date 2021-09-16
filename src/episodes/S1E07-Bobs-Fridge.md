@@ -9,10 +9,10 @@ description: "Bob RAGES while telling a story about trying to get a new fridge i
 scores:
   - score: 200000
     character: "Mark"
+    placement: 2
   - score: 69
     character: "Bob"
-  - score: 0
-    character: "Wade"
+    placement: 1
 ---
 
 # Bob's Fridge

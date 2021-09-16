@@ -7,8 +7,6 @@ presenters: ["Bob", "Wade"]
 winner: "Bob"
 description: "Mark hosts while Wade and Bob one-up each other's concepts for eliminating body odor, debate the true number of human senses, and remember nostalgic aromas."
 scores:
-  - score: 0
-    character: "Mark"
   - score: 15
     character: "Bob"
   - score: 10

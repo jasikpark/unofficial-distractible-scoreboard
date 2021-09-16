@@ -3,6 +3,7 @@ import parser from "any-date-parser";
 import styles from "@components/EpisodeCard.module.css";
 import { Episode } from "@src/episodes.ts";
 import Score from "@components/Score.astro";
+import { sortScores } from "@src/utils.ts";
 import slug from "slug";
 
 export interface Props {
@@ -22,8 +23,8 @@ const {
 } = Astro.props as Props;
 
 const parsedDate = parser.fromString(publishDate);
-const sortedScores = scores.sort((a, b) => b.score - a.score);
-console.debug(sortedScores);
+const sortedScores = scores.sort(sortScores);
+
 const winner = sortedScores[0];
 ---
 

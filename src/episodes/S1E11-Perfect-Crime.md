@@ -9,10 +9,10 @@ description: 'This week Mark, Wade and Bob answer the age-old hypothetical quest
 scores:
   - score: "definitely some points"
     character: "Mark"
-  - score: "zero"
-    character: "Bob"
+    placement: 1
   - score: "at least a few points"
     character: "Wade"
+    placement: 2
 ---
 
 # Perfect Crime

@@ -9,10 +9,10 @@ description: "Bob hosts, hoping Mark and Wade will discuss how they want their f
 scores:
   - score: "nada"
     character: "Mark"
-  - score: "none"
-    character: "Bob"
+    placement: 2
   - score: "several points"
     character: "Wade"
+    placement: 1
 ---
 
 # Happy Funerals

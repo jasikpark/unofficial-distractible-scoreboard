@@ -9,8 +9,6 @@ description: "Bob prompts a discussion about technology that blurs the lines of 
 scores:
   - score: 250000
     character: "Mark"
-  - score: 0
-    character: "Bob"
   - score: 507
     character: "Wade"
 ---
