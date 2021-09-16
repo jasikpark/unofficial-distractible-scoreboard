@@ -1,6 +1,7 @@
 ---
 import { Markdown } from "astro/components";
 import MainLayout from "@layouts/MainLayout.astro";
+import HeadSEO from "@components/HeadSEO.astro";
 import EpisodeLink from "@components/EpisodeLink.astro";
 import FinalScores from "@components/FinalScores.astro";
 import Character from "@components/Character.astro";
@@ -27,6 +28,10 @@ const { episode, prev, next } = Astro.props;
 ---
 
 <MainLayout class="main-layout">
+  <HeadSEO
+    slot="head"
+    canonicalURL={Astro.request.canonicalURL}
+    content={episode} />
   <div class="back-to-episodes">
     <a href={`${Astro.site}#episodes`}>‹ Episodes</a>
   </div>

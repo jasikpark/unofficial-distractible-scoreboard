@@ -1,5 +1,6 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
+import HeadSEO from "@components/HeadSEO.astro";
 import SkipLink from "@components/SkipLink.astro";
 import Intro from "@components/Intro.astro";
 import AllTimeScoreboard from "@components/AllTimeScoreboard.astro";
@@ -29,6 +30,7 @@ const allTimeScores = episodes.reduce(
 ---
 
 <MainLayout>
+  <HeadSEO slot="head" canonicalURL={Astro.request.canonicalURL} />
   <SkipLink href="#episodes" slot="skip-links">Skip to episodes list</SkipLink>
   <Intro />
   <AllTimeScoreboard scores={allTimeScores} />
