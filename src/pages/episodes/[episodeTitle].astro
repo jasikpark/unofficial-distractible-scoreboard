@@ -26,11 +26,13 @@ const { episodeTitle } = Astro.request.params;
 const { episode, prev, next } = Astro.props;
 ---
 
-<MainLayout>
-  <a class="back-to-episodes" href={`${Astro.site}#episodes`}>‹ Episodes</a>
+<MainLayout class="main-layout">
+  <div class="back-to-episodes">
+    <a href={`${Astro.site}#episodes`}>‹ Episodes</a>
+  </div>
   <h1>Episode {episode["episode_number"]}: {episodeTitle}</h1>
   <section class="episode-blurb">
-    <blockquote>{episode.description}</blockquote>
+    <blockquote><p>{episode.description}</p></blockquote>
     <div class="roles">
       <div>Host: <Character name={episode.host} /></div>
       <div>
@@ -66,6 +68,9 @@ const { episode, prev, next } = Astro.props;
 </MainLayout>
 
 <style>
+  .main-layout {
+    font-size: var(--font-size-3);
+  }
   .back-to-episodes {
     padding: 1em;
     text-transform: uppercase;
@@ -77,10 +82,13 @@ const { episode, prev, next } = Astro.props;
     margin-inline: auto;
     text-align: center;
     text-transform: uppercase;
+    padding: 1em;
   }
   .episode-blurb {
     background-color: var(--color-black);
     color: var(--color-white);
+
+    padding: 1em;
   }
   .episode-blurb blockquote {
     max-width: 50ch;
@@ -90,6 +98,8 @@ const { episode, prev, next } = Astro.props;
     border-left: solid 0.23em hsla(0, 100%, 100%, 17%);
   }
   .roles {
+    font-size: var(--font-size-5);
+
     display: flex;
     flex-direction: column;
     align-items: center;
