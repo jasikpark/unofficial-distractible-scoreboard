@@ -29,22 +29,24 @@ const winner = sortedScores[0];
 ---
 
 <article class={`${className} ${styles.EpisodeCard}`.trim()}>
-  <div>
-    <h1 class={styles.Title}>
-      <a href={new URL(`/episodes/${slug(title)}`, Astro.site)}
-        >{`Episode ${episodeNumber}: ${title}`}</a>
-    </h1>
-    {!parsedDate.invalid && <time class={styles.Time} datetime={parsedDate.toISOString()}>
-        Uploaded {parsedDate.toDateString()}
-      </time>}
+  <div class={styles.EpisodeCardContent}>
+    <div>
+      <h1 class={styles.Title}>
+        <a href={new URL(`/episodes/${slug(title)}`, Astro.site)}
+          >{`Episode ${episodeNumber}: ${title}`}</a>
+      </h1>
+      {!parsedDate.invalid && <time class={styles.Time} datetime={parsedDate.toISOString()}>
+          Uploaded {parsedDate.toDateString()}
+        </time>}
+    </div>
+    <p>{description}</p>
+    {scores.length > 0 ? <ol class={styles.ScoresList}>
+        <li>
+          <Score score={winner}>Winner: {winner.character}</Score>
+        </li>
+        {sortedScores.map((score) => <li>
+            <Score score={score} />
+          </li>)}
+      </ol> : ""}
   </div>
-  <p>{description}</p>
-  {scores.length > 0 ? <ol class={styles.ScoresList}>
-      <li>
-        <Score score={winner}>Winner: {winner.character}</Score>
-      </li>
-      {sortedScores.map((score) => <li>
-          <Score score={score} />
-        </li>)}
-    </ol> : ""}
 </article>
