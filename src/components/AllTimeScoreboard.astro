@@ -21,13 +21,25 @@ const sortedScores = scores.sort(sortScores);
     color: var(--color-white);
     background-color: var(--color-black);
 
-    font-size: var(--font-size-7);
+    font-size: var(--font-size-3);
     font-weight: 600;
     text-transform: uppercase;
 
     padding: 1rem;
     max-width: 100%;
     overflow-x: hidden;
+  }
+
+  @media (min-width: 700px) {
+    section {
+      font-size: var(--font-size-5);
+    }
+  }
+
+  @media (min-width: 1080px) {
+    section {
+      font-size: var(--font-size-7);
+    }
   }
 
   section > * + * {

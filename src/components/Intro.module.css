@@ -7,11 +7,11 @@
   gap: 1em;
 
   font-weight: 700;
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-1);
 
   color: var(--color-white);
 
-  padding: 2em;
+  padding: 1em;
   max-width: 1440px;
   margin-inline: auto;
 }
@@ -21,6 +21,11 @@
 }
 
 @container (min-width: 700px) {
+  .distractibleBlurb {
+    font-size: var(--font-size-3);
+    padding: 2em;
+  }
+
   .figure {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;

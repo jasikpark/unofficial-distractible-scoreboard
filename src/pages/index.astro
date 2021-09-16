@@ -42,31 +42,33 @@ const allTimeScores = episodes.reduce(
 <style>
   .episodes {
     padding-block: 2rem;
-    width: min(70vw, 1000px);
+    max-width: min(100vw - 2rem, 1000px);
     margin-inline: auto;
   }
   .episodes > * + * {
     padding-top: 1rem;
   }
-  .episodes li:nth-of-type(2n + 1) {
-    transform: translateX(-1em);
-  }
-  .episodes li:nth-of-type(3n + 1) {
-    transform: translateX(5em);
-  }
-  .episodes li:nth-of-type(4n + 1) {
-    transform: translateX(-2em);
-  }
-  .episodes li:nth-of-type(5n + 1) {
-    transform: translateX(9em);
-  }
-  .episodes li:nth-of-type(6n + 1) {
-    transform: translateX(-11em);
-  }
-  .episodes li:nth-of-type(7n + 1) {
-    transform: translateX(8em);
-  }
-  .episodes li:nth-of-type(8n + 1) {
-    transform: translateX(-7em);
+  @media (min-width: 700px) {
+    .episodes li:nth-of-type(2n + 1) {
+      transform: translateX(-1%);
+    }
+    .episodes li:nth-of-type(3n + 1) {
+      transform: translateX(5%);
+    }
+    .episodes li:nth-of-type(4n + 1) {
+      transform: translateX(-2%);
+    }
+    .episodes li:nth-of-type(5n + 1) {
+      transform: translateX(9%);
+    }
+    .episodes li:nth-of-type(6n + 1) {
+      transform: translateX(-11%);
+    }
+    .episodes li:nth-of-type(7n + 1) {
+      transform: translateX(8%);
+    }
+    .episodes li:nth-of-type(8n + 1) {
+      transform: translateX(-7%);
+    }
   }
 </style>

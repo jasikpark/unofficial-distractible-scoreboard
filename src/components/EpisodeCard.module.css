@@ -17,13 +17,13 @@
   line-height: var(--line-height-5);
 }
 
-@container (min-width: 700px) {
+@media (min-width: 700px) {
   .EpisodeCardContent {
     font-size: var(--font-size-3);
   }
 }
 
-@container (min-width: 1080px) {
+@media (min-width: 1080px) {
   .EpisodeCardContent {
     font-size: var(--font-size-5);
   }
