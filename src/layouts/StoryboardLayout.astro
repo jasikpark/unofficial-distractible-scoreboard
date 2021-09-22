@@ -8,7 +8,7 @@ const { title = "", dark = false } = Astro.props;
 
 <html lang="en" class={`storyboard ${dark ? "dark" : ""}`.trim()}>
   <head>
-    <HeadCommon title={title} />
+    <HeadCommon {title} />
   </head>
   <body>
     <ul>

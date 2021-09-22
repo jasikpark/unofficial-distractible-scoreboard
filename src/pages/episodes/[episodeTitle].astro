@@ -35,7 +35,7 @@ const { episode, prev, next } = Astro.props;
   <div class="back-to-episodes">
     <a href={`${Astro.site}#episodes`}>‹ Episodes</a>
   </div>
-  <h1><EpisodeLink rel="canonical" episode={episode} /></h1>
+  <h1><EpisodeLink rel="canonical" {episode} /></h1>
   <section class="episode-blurb">
     <blockquote><p>{episode.description}</p></blockquote>
     <div class="roles">

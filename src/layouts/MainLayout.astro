@@ -8,7 +8,7 @@ const { title = "", class: className = "" } = Astro.props;
 
 <html lang="en" class="main-layout">
   <head>
-    <HeadCommon title={title} />
+    <HeadCommon {title} />
     <slot name="head" />
   </head>
 
