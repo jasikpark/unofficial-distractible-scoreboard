@@ -3,25 +3,26 @@ import HeadCommon from "@components/HeadCommon.astro";
 import SkipLink from "@components/SkipLink.astro";
 import MainHeader from "@components/MainHeader.astro";
 import MainFooter from "@components/MainFooter.astro";
-const { title = "" } = Astro.props;
+const { title = "", class: className = "" } = Astro.props;
 ---
 
 <html lang="en" class="main-layout">
   <head>
-    <HeadCommon title={title} />
+    <HeadCommon {title} />
+    <slot name="head" />
   </head>
 
   <body>
     <div class="min-h-screen">
-      <SkipLink/>
-      <slot name="skip-links"/>
+      <SkipLink />
+      <slot name="skip-links" />
       <MainHeader />
-      <main id="main">
+      <main id="main" class={className}>
         <slot />
       </main>
     </div>
     <MainFooter>
-    <slot name="footer"/>
+      <slot name="footer" />
     </MainFooter>
   </body>
 </html>

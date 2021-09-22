@@ -1,0 +1,17 @@
+---
+import slug from "slug";
+export interface Props {
+  episode: {
+    title: string;
+    episode_number: number;
+  };
+  rel: string;
+}
+const {
+  episode: { title, episode_number: episodeNumber },
+  rel,
+} = Astro.props as Props;
+---
+
+<a {rel} href={new URL(`/episodes/${slug(title)}`, Astro.site)}
+  ><slot />{`Episode ${episodeNumber}: ${title}`}</a>
