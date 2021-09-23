@@ -4475,15 +4475,15 @@ preact@^10.5.13:
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.14.tgz#0b14a2eefba3c10a57116b90d1a65f5f00cd2701"
   integrity sha512-KojoltCrshZ099ksUZ2OQKfbH66uquFoxHSbnwKbTJHeQNvx42EmC7wQVWNuDt6vC5s3nudRHFtKbpY4ijKlaQ==
 
-prettier-plugin-astro@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.0.6.tgz#d9b14782ca90b2e3db03b117764e404c91c17665"
-  integrity sha512-KGMxSNX9XgovDKIL0e9SA4gDSAieHUVJWRFTAxPIz/k8Q+JAJ3aKfxwUek6TeZ8POrzH0cOhRvTfLicCnH0gyA==
+prettier-plugin-astro@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.0.7.tgz#6e7658baa87326ba5946d1db86ca1eba5a6baaa1"
+  integrity sha512-bdPOwEyNMn6VkFXZwWl7VS14I7qnIcj8pHbVA9gQHB/2Jbmx6+ejE8QRM+1RPnADqVLjqabX/ikBXwm0faRCdA==
   dependencies:
     "@astrojs/parser" "^0.15.0"
-    prettier "^2.2.1"
+    prettier "^2.4.1"
 
-prettier@2.4.1, prettier@^2.2.1:
+prettier@2.4.1, prettier@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
   integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
