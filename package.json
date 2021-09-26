@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "astro dev",
+    "forestry:start": "yarn start && yarn preview",
     "build": "astro build",
     "preview": "astro preview",
     "format": "yarn prettier -w .",
