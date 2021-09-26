@@ -15,12 +15,6 @@ scores:
     character: "Wade"
 ---
 
-# Camping
-
-> Mark recounts the legend of an insane creature from the Rocky Mountains. Bob explains how his formative kayaking trip almost ended like a horror movie, and Wade...well, Wade just does what Wade does...
-
-[[S1E3 - Transportation|← Previous Episode]] | [[S1E5 - Fake Tech|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

@@ -5,6 +5,11 @@ title: "Hair"
 host: "Wade"
 presenters: ["Mark", "Bob"]
 winner: "Mark"
+titles:
+  - title: "Dip It"
+    character: "Bob"
+  - title: "Dip It And Rip It"
+    character: "Mark"
 description: "Today the guys discuss all things hair (and the lack there of)! They warn of the dangers of hair removal, explore the strange hair trends of ancient Greek statues, and discuss sci-fi scenarios where the elite harvest hair and organs from the less fortunate."
 scores:
   - score: 1060
@@ -14,20 +19,6 @@ scores:
   - score: 400
     character: "Wade"
 ---
-
-# Hair
-
-> Today the guys discuss all things hair (and the lack there of)! They warn of the dangers of hair removal, explore the strange hair trends of ancient Greek statues, and discuss sci-fi scenarios where the elite harvest hair and organs from the less fortunate.
-
-[[S1E2 - Body Odor|Next Episode →]]
-
-## Roles & Titles
-
-- Host
-  - **[[Wade]]**
-- Presenters
-  - **[[Bob]]** - **`Dip It`**
-  - **[[Mark]]** - **`Dip It And Rip It`**
 
 ## Points Given Out
 
@@ -51,7 +42,3 @@ scores:
    1. +10
    2. 44:55
    3. For finding the statues (Herm?)
-
-## Result
-
-Winner - Mark

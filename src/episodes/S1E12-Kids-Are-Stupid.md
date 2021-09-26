@@ -15,12 +15,6 @@ scores:
     character: "Wade"
 ---
 
-# Kids Are stupid
-
-> The guys trade stories about how dumb kids can be: from inventing stupid games, to playing with banned toys, to somehow making it through all of it without a scratch.
-
-[[S1E11 - Perfect Crime|← Previous Episode]] | [[S1E13 - Happy Funerals|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

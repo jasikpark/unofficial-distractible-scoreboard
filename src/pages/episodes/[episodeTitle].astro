@@ -7,7 +7,6 @@ import FinalScores from "@components/FinalScores.astro";
 import Character from "@components/Character.astro";
 import styles from "@components/FooterLink.module.css";
 import slug from "slug";
-import { format } from "node:util";
 
 export async function getStaticPaths() {
   const episodes = await Astro.fetchContent("../../episodes/*.md");
@@ -46,12 +45,18 @@ const { episode, prev, next } = Astro.props;
       </div>
     </div>
   </section>
-  {episode.timestamps ? <ul>
-    {episode.timestamps.map((timestamp) => <li>this is an episode: {JSON.stringify(timestamp, null, 2)}</li>)}
-  </ul>}
-  <section class="content">
-    <Markdown content={episode.astro.source} />
-  </section>
+  {episode?.titles ? <pre>{JSON.stringify(episode.titles, null, 2)}</pre> : ""}
+  {episode?.timestamps ? <section class="timestamps">
+      <ul>
+        {episode.timestamps.map((timestamp) => <li>
+            this is an episode: {JSON.stringify(timestamp, null, 2)}
+          </li>)}
+      </ul>
+    </section> : <section class="content">
+      <Fragment>
+        <Markdown content={episode.astro.source} />
+      </Fragment>
+    </section>}
   <div id="episode-next-prev" class="inter-episode-nav">
     <div>
       {prev ? <EpisodeLink rel="prev" episode={prev}>

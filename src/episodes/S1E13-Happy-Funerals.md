@@ -15,12 +15,6 @@ scores:
     placement: 1
 ---
 
-# Happy Funerals
-
-> Bob hosts, hoping Mark and Wade will discuss how they want their funerals to be. Instead, Mark offers “Santa’s Big Goodbye” and Wade describes what a Jackass funeral would be like!
-
-[[S1E12 - Kids Are Stupid|← Previous Episode]] | [[S1E14 - Future|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

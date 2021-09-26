@@ -15,12 +15,6 @@ scores:
     placement: 1
 ---
 
-# Bob's Fridge
-
-> Bob RAGES while telling a story about trying to get a new fridge installed.
-
-[[S1E6 - Supernatural|← Previous Episode]] | [[S1E8 - Conventions|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

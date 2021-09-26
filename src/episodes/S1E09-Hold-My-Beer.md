@@ -15,12 +15,6 @@ scores:
     character: "Wade"
 ---
 
-# Hold My Beer
-
-> Wade hosts as Bob and Mark share some classic “hold my beer” moments from their college days…
-
-[[S1E8 - Conventions|← Previous Episode]] | [[S1E10 - Synchronicity|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

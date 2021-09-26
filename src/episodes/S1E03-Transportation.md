@@ -15,12 +15,6 @@ scores:
     character: "Wade"
 ---
 
-# Transportation
-
-> Bob hosts as Wade and Mark make their predictions on what the next major form of transportation will be, taking many wrong turns in the process...
-
-[[S1E2 - Body Odor|← Previous Episode]] | [[S1E4 - Camping|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

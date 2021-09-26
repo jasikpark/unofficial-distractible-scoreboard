@@ -15,12 +15,6 @@ scores:
     placement: 2
 ---
 
-# Perfect Crime
-
-> This week Mark, Wade and Bob answer the age-old hypothetical question: what is the "perfect crime?"
-
-[[S1E10 - Synchronicity|← Previous Episode]] | [[S1E12 - Kids Are Stupid|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

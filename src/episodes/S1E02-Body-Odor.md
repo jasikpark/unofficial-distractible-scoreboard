@@ -13,12 +13,6 @@ scores:
     character: "Wade"
 ---
 
-# Body Odor
-
-> Mark hosts while Wade and Bob one-up each other's concepts for eliminating body odor, debate the true number of human senses, and remember nostalgic aromas.
-
-[[S1E1 - Hair|← Previous Episode]] | [[S1E3 - Transportation|Next Episode →]]
-
 ## Roles & Titles
 
 - Host
@@ -70,7 +64,3 @@ scores:
     1. -1
     2. 43:27
     3. For a bad clown joke.
-
-## Result
-
-Winner - Bob

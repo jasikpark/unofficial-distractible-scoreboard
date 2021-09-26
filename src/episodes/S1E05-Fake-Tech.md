@@ -13,12 +13,6 @@ scores:
     character: "Wade"
 ---
 
-# Fake Tech
-
-> Bob prompts a discussion about technology that blurs the lines of reality in this hilarious episode full of gadget scams, 00’s game nostalgia, and if the mute button could exist for real life.
-
-[[S1E4 - Camping|← Previous Episode]] | [[S1E6 - Supernatural|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

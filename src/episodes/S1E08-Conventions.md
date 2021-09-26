@@ -15,12 +15,6 @@ scores:
     character: "Wade"
 ---
 
-# Conventions
-
-> On this episode of the pod, the guys get nostalgic for conventions and all the good and bad that come with them. From notable failed attempts, to bizarre themes (like "pizza" and "baby"), to post-COVID predictions, conventions hold a special place in Mark, Bob, and Wade's hearts.
-
-[[S1E7 - Bob's Fridge|← Previous Episode]] | [[S1E9 - Hold My Beer|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

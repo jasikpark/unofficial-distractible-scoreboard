@@ -13,20 +13,6 @@ scores:
     character: "Wade"
 ---
 
-# Synchronicity
-
-> In front of a "live" Discord audience, the guys discuss synchronicities, déjà vu, mind-reading, and hive minds.
-
-[[S1E9 - Hold My Beer|← Previous Episode]] | [[S1E11 - Perfect Crime|Next Episode →]]
-
-## Roles & Titles
-
-- Host
-  - **[[Mark]]**
-- Presenters
-  - **[[Bob]]** - **`No Title`**
-  - **[[Wade]]** - **`Out of the Semi into the Synchronicity`**
-
 ## Points Given Out
 
 @6:30 +1 point to Wade for being 1st on the draw

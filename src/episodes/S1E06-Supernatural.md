@@ -13,12 +13,6 @@ scores:
     character: "Wade"
 ---
 
-# Supernatural
-
-> Mark hosts as Bob and Wade trade scary stories. For Bob, it's a strange woman who catches children who stay out too late. For Wade, a true story about how the night after watching “Texas Chainsaw Massacre” may have been scarier than the movie itself!
-
-[[S1E5 - Fake Tech|← Previous Episode]] | [[S1E7 - Bob's Fridge|Next Episode →]]
-
 ## Roles & Titles
 
 - Host

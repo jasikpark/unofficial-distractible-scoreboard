@@ -13,12 +13,6 @@ scores:
     character: "Bob"
 ---
 
-# Future
-
-> This week the guys talk about the future: expectations vs. reality. What did people in the past predict the future would be like? Were they accurate? Will we be accurate if we attempt to do the same…?
-
-[[S1E13 - Happy Funerals|← Previous Episode]] %%| [[S1E3 - Transportation|Next Episode →]]%%
-
 ## Roles & Titles
 
 - Host
