@@ -45,7 +45,14 @@ const { episode, prev, next } = Astro.props;
       </div>
     </div>
   </section>
-  {episode?.titles ? <pre>{JSON.stringify(episode.titles, null, 2)}</pre> : ""}
+  {episode?.titles ? <section class="titles">
+      {episode.titles.map((title) => <div>
+          <Character class="titles-child" block={true} name={title.character} />
+          {Array.isArray(title.title) ? title.title.map( (title) => <div class="titles-child">
+                  {title}
+                </div> ) : <div class="titles-child">{title.title}</div>}
+        </div>)}
+    </section> : ""}
   {episode?.timestamps ? <section class="timestamps">
       <ul>
         {episode.timestamps.map((timestamp) => <li>
@@ -120,14 +127,32 @@ const { episode, prev, next } = Astro.props;
   }
   .inter-episode-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1fr;
+    grid-auto-flow: column;
+    gap: 1em;
     max-width: 70%;
     margin-inline: auto;
     margin-block: 2em;
   }
   .inter-episode-nav :nth-child(2) {
     text-align: right;
+  }
+  .titles {
+    font-size: var(--font-size-5);
+    text-align: center;
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    max-width: 70%;
+    margin-inline: auto;
+    margin-block: 2em;
+  }
+  .titles-child {
+    background-color: var(--color-black);
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.25em;
   }
   .content {
     padding: 1em;

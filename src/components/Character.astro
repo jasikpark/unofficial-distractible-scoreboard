@@ -2,7 +2,11 @@
 import characters from "@components/characters.module.css";
 const getCharacterStyle = (character: string) =>
   characters[character.toLowerCase()];
-const { name } = Astro.props;
+const { name, class: className = "", block = false } = Astro.props;
 ---
 
-<span class={getCharacterStyle(name)}>{name}</span>
+{block ? <div class={`${getCharacterStyle(name)} ${className}`.trim()}>
+    {name}
+  </div> : <span class={`${getCharacterStyle(name)} ${className}`.trim()}>
+    {name}
+  </span>}
