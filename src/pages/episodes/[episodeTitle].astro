@@ -46,6 +46,9 @@ const { episode, prev, next } = Astro.props;
       </div>
     </div>
   </section>
+  {episode.timestamps ? <ul>
+    {episode.timestamps.map((timestamp) => <li>this is an episode: {JSON.stringify(timestamp, null, 2)}</li>)}
+  </ul>}
   <section class="content">
     <Markdown content={episode.astro.source} />
   </section>
