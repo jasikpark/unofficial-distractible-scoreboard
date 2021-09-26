@@ -5,6 +5,11 @@ title: "Camping"
 host: "Wade"
 presenters: ["Bob", "Mark"]
 winner: "Bob"
+titles:
+  - title: "Out of the river, and into the axe murderers den"
+    character: "Bob"
+  - title: "The day the mountain swallowed"
+    character: "Mark"
 description: "Mark recounts the legend of an insane creature from the Rocky Mountains. Bob explains how his formative kayaking trip almost ended like a horror movie, and Wade...well, Wade just does what Wade does..."
 scores:
   - score: 254
@@ -14,14 +19,6 @@ scores:
   - score: 0
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Bob]]**
-- Presenters
-  - **[[Bob]]** - **`Out of the river, and into the axe murderers den`**
-  - **[[Mark]]** - **`The day the mountain swallowed`**
 
 ## Points Given Out
 

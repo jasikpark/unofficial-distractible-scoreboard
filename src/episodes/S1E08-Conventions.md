@@ -5,6 +5,11 @@ title: "Conventions"
 host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Wade"
+titles:
+  - title: "There will be Balls"
+    character: "Mark"
+  - title: "A con job, that's just show biz"
+    character: "Wade"
 description: 'On this episode of the pod, the guys get nostalgic for conventions and all the good and bad that come with them. From notable failed attempts, to bizarre themes (like "pizza" and "baby"), to post-COVID predictions, conventions hold a special place in Mark, Bob, and Wade''s hearts.'
 scores:
   - score: 0
@@ -14,14 +19,6 @@ scores:
   - score: 1151
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Bob]]**
-- Presenters
-  - **[[Mark]]** - **`There will be Balls`**
-  - **[[Wade]]** - **`A con job, that's just show biz`**
 
 ## Points Given Out
 

@@ -5,6 +5,11 @@ title: "Transportation"
 host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Wade"
+titles:
+  - title: "You spin me right round baby right round"
+    character: "Mark"
+  - title: "The information super hugway"
+    character: "Wade"
 description: "Bob hosts as Wade and Mark make their predictions on what the next major form of transportation will be, taking many wrong turns in the process..."
 scores:
   - score: 6
@@ -14,20 +19,6 @@ scores:
   - score: 11
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Bob]]**
-- Presenters
-  - **[[Mark]]** - **`You spin me right round baby right round`**
-  - **[[Wade]]** - **`The information super hugway`**
-
-[[Bob]]- Host
-
-[[Mark]]-
-
-[[Wade]]- The information super hugway
 
 ## Points Given Out
 

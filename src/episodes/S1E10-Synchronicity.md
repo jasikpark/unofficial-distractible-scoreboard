@@ -5,6 +5,11 @@ title: "Synchronicity"
 host: "Mark"
 presenters: ["Bob", "Wade"]
 winner: "Bob"
+titles:
+  - title: "No Title"
+    character: "Bob"
+  - title: "Out of the Semi into the Synchronicity"
+    character: "Wade"
 description: 'In front of a "live" Discord audience, the guys discuss synchronicities, déjà vu, mind-reading, and hive minds.'
 scores:
   - score: 4

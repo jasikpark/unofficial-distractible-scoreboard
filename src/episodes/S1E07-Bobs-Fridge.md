@@ -5,6 +5,11 @@ title: "Bob's Fridge"
 host: "Wade"
 presenters: ["Bob", "Mark"]
 winner: "Bob"
+titles:
+  - title: "Bob's Fridge"
+    character: "Bob"
+  - title: "Concedes"
+    character: "Mark"
 description: "Bob RAGES while telling a story about trying to get a new fridge installed."
 scores:
   - score: 200000
@@ -14,14 +19,6 @@ scores:
     character: "Bob"
     placement: 1
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Wade]]**
-- Presenters
-  - **[[Bob]]** - **`Bob's Fridge`**
-  - **[[Mark]]** - **`Concedes`**
 
 ## Points Given Out
 

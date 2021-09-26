@@ -5,6 +5,11 @@ title: "Hold My Beer"
 host: "Wade"
 presenters: ["Bob", "Mark"]
 winner: "Mark"
+titles:
+  - title: "Longest, Codest, Shittiest, Night"
+    character: "Bob"
+  - title: "The day I broke my ass"
+    character: "Mark"
 description: "Wade hosts as Bob and Mark share some classic “hold my beer” moments from their college days…"
 scores:
   - score: 1015
@@ -14,14 +19,6 @@ scores:
   - score: 0
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Wade]]**
-- Presenters
-  - **[[Bob]]** - **`Longest, Codest, Shittiest, Night`**
-  - **[[Mark]]** - **`The day I broke my ass`**
 
 ## Points Given Out
 

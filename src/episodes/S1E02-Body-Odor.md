@@ -5,6 +5,11 @@ title: "Body Odor"
 host: "Mark"
 presenters: ["Bob", "Wade"]
 winner: "Bob"
+titles:
+  - title: "No Body Odor For You"
+    character: "Wade"
+  - title: "Rub, Rub, Rub, Rub, Rub, Rub, Rub"
+    character: "Bob"
 description: "Mark hosts while Wade and Bob one-up each other's concepts for eliminating body odor, debate the true number of human senses, and remember nostalgic aromas."
 scores:
   - score: 15
@@ -12,15 +17,6 @@ scores:
   - score: 10
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Mark]]**
-- Presenters
-  - **[[Wade]]** - **`No Body Odor For You`**
-  - **[[Bob]]** - **`Rub, Rub, Rub, Rub, Rub, Rub, Rub`**
-    - 7 Rubs
 
 ## Points Given Out
 

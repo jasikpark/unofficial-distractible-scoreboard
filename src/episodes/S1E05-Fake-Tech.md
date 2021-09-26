@@ -5,6 +5,11 @@ title: "Fake Tech"
 host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Mark"
+titles:
+  - title: "STFU"
+    character: "Mark"
+  - title: "Biggest Dumbest Squeeze"
+    character: "Wade"
 description: "Bob prompts a discussion about technology that blurs the lines of reality in this hilarious episode full of gadget scams, 00’s game nostalgia, and if the mute button could exist for real life."
 scores:
   - score: 250000
@@ -12,14 +17,6 @@ scores:
   - score: 507
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Bob]]**
-- Presenters
-  - **[[Mark]]** - **`STFU`**
-  - **[[Wade]]** - **`Biggest Dumbest Squeeze`**
 
 ## Points Given Out
 

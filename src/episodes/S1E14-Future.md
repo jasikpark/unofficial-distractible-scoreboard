@@ -13,14 +13,6 @@ scores:
     character: "Bob"
 ---
 
-## Roles & Titles
-
-- Host
-  - **[[Wade]]**
-- Presenters
-  - **[[Bob]]**
-  - **[[Mark]]**
-
 ## Points Given Out
 
 @2:56 +10 points for Mark for Flattery

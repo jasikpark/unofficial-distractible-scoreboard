@@ -5,6 +5,11 @@ title: "Happy Funerals"
 host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Wade"
+titles:
+  - title: "Santa's Big Goodbye"
+    character: "Mark"
+  - title: "Jackass Funeral"
+    character: "Wade"
 description: "Bob hosts, hoping Mark and Wade will discuss how they want their funerals to be. Instead, Mark offers “Santa’s Big Goodbye” and Wade describes what a Jackass funeral would be like!"
 scores:
   - score: "nada"
@@ -14,14 +19,6 @@ scores:
     character: "Wade"
     placement: 1
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Bob]]**
-- Presenters
-  - **[[Mark]]** - **`Santa's Big Goodbye`**
-  - **[[Wade]]** - **`Jackass Funeral`**
 
 ## Points Given Out
 

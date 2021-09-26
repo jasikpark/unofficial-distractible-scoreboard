@@ -5,6 +5,11 @@ title: "Kids Are Stupid"
 host: "Mark"
 presenters: ["Bob", "Wade"]
 winner: "Bob"
+titles:
+  - title: "The hurt in the woods & yard darts should not exist"
+    character: "Bob"
+  - title: "?"
+    character: "Wade"
 description: "The guys trade stories about how dumb kids can be: from inventing stupid games, to playing with banned toys, to somehow making it through all of it without a scratch."
 scores:
   - score: 0
@@ -14,14 +19,6 @@ scores:
   - score: 6
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Mark]]**
-- Presenters
-  - **[[Bob]]** - **`The hurt in the woods & yard darts should not exist`**
-  - **[[Wade]]** - **`?`**
 
 ## Points Given Out
 

@@ -5,6 +5,13 @@ title: "Perfect Crime"
 host: "Bob"
 presenters: ["Mark", "Wade"]
 winner: "Mark"
+titles:
+  - title: "I did it for Love"
+    character: "Mark"
+  - title:
+      - "My player 2"
+      - "The Park Wettening. Aka Moistening of the park"
+    character: "Wade"
 description: 'This week Mark, Wade and Bob answer the age-old hypothetical question: what is the "perfect crime?"'
 scores:
   - score: "definitely some points"
@@ -14,15 +21,6 @@ scores:
     character: "Wade"
     placement: 2
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Bob]]**
-- Presenters
-  - **[[Mark]]** - **`I did it for Love`**
-  - **[[Wade]]** - **`My player 2`**
-    - Second title: **`The Park Wettening. Aka Moistening of the park`**
 
 ## Points Given Out
 

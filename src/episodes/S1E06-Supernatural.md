@@ -5,6 +5,11 @@ title: "Supernatural"
 host: "Mark"
 presenters: ["Bob", "Wade"]
 winner: "Wade"
+titles:
+  - title: "Seasons don't fear the Reaper, they fear the Titties"
+    character: "Bob"
+  - title: "Millford Chainsaw Massacre"
+    character: "Wade"
 description: "Mark hosts as Bob and Wade trade scary stories. For Bob, it's a strange woman who catches children who stay out too late. For Wade, a true story about how the night after watching “Texas Chainsaw Massacre” may have been scarier than the movie itself!"
 scores:
   - score: 0
@@ -12,14 +17,6 @@ scores:
   - score: 7
     character: "Wade"
 ---
-
-## Roles & Titles
-
-- Host
-  - **[[Mark]]**
-- Presenters
-  - **[[Bob]]** - **`Seasons don't fear the Reaper, they fear the Titties`**
-  - **[[Wade]]** - **`Millford Chainsaw Massacre`**
 
 ## Points Given Out
 
