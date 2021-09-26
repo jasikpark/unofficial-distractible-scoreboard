@@ -28,7 +28,7 @@ const { episode, prev, next } = Astro.props;
 ---
 
 <MainLayout class="main-layout">
-  {episode.forestry_instant_preview_id ? <meta slot="head" property="forestry_instant_preview_id" content={episode.forestry_instant_preview_id} />}
+  {episode.forestry_instant_preview_id ? <meta slot="head" property="forestry_instant_preview_id" content={episode.forestry_instant_preview_id} /> : ""}
   <HeadSEO
     slot="head"
     canonicalURL={Astro.request.canonicalURL}
