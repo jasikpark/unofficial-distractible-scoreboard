@@ -50,7 +50,10 @@ const allTimeScores = episodes.reduce(
   .episodes > * + * {
     padding-top: 1rem;
   }
-  @media (min-width: 700px) {
+  @media (min-width: 1080px) {
+    .episodes {
+      max-width: min(100vw - 11em, 1000px);
+    }
     .episodes li:nth-of-type(2n + 1) {
       transform: translateX(-1em);
     }

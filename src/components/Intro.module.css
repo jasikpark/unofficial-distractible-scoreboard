@@ -1,7 +1,7 @@
 .distractibleBlurb {
   contain: layout inline-size;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   grid-auto-flow: dense;
   gap: 1em;
@@ -20,7 +20,7 @@
   max-width: 500px;
 }
 
-@container (min-width: 700px) {
+@container (min-width: 1080px) {
   .distractibleBlurb {
     font-size: var(--font-size-3);
     padding: 2em;
