@@ -11,9 +11,15 @@
 
   color: var(--color-white);
 
-  padding: 1em;
+  padding: 0.5em;
   max-width: 1440px;
   margin-inline: auto;
+}
+
+@media (min-width: 700px) {
+  .distractibleBlurb {
+    padding: 1em;
+  }
 }
 
 .figure {
