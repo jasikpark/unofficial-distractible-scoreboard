@@ -1082,10 +1082,10 @@ astring@^1.7.4:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.7.5.tgz#a7d47fceaf32b052d33a3d07c511efeec67447ca"
   integrity sha512-lobf6RWXb8c4uZ7Mdq0U12efYmpD1UFnyOWVJPTa3ukqZrMopav+2hdNu0hgBF0JIBFK9QgrBDfwYvh3DFJDAA==
 
-astro@0.20.10:
-  version "0.20.10"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.10.tgz#f2fd30efbc84ce3cb0f6ef36945e8cd0246716c1"
-  integrity sha512-BfQ2/OJvY2i4nN//LCm9nbzKFMq9LVWk/xImynvZ5eo6za8KEXVJ1KdmDYlKUHwSGq/hZ2armexlcAgdmnL6Dg==
+astro@0.20.11:
+  version "0.20.11"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.11.tgz#42316582ddaccce2ab0b003fc265682b1de3ac99"
+  integrity sha512-NpkDbhbJpxQSD7uFjsnXnju8UBYv+kmM6gvI1QJeE9fTLxbbwQmFGV6ip18N3PgV9RMeZTHwJMq9KQod/IfbBA==
   dependencies:
     "@astrojs/language-server" "^0.7.16"
     "@astrojs/markdown-support" "0.3.1"
