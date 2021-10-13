@@ -1,5 +1,6 @@
 ---
-import { FooterLink } from "@components/FooterLink.module.css";
+import FL from "@components/FooterLink.module.css";
+const { FooterLink } = FL;
 ---
 
 <footer>
@@ -36,13 +37,14 @@ import { FooterLink } from "@components/FooterLink.module.css";
     list-style: none;
     gap: 2rem;
   }
+
   a {
     color: var(--color-white);
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: underline;
-    font-size: 1.5rem;
   }
+
   span {
     font-weight: 400;
   }

@@ -66,12 +66,12 @@ const { episode, prev, next } = Astro.props;
     </section>}
   <div id="episode-next-prev" class="inter-episode-nav">
     <div>
-      {prev ? <EpisodeLink rel="prev" episode={prev}>
+      {prev ? <EpisodeLink class="link" rel="prev" episode={prev}>
           Previous Episode:{" "}
         </EpisodeLink> : ""}
     </div>
     <div>
-      {next ? <EpisodeLink rel="next" episode={next}>
+      {next ? <EpisodeLink class="link" rel="next" episode={next}>
           Next Episode:{" "}
         </EpisodeLink> : ""}
     </div>
@@ -91,7 +91,7 @@ const { episode, prev, next } = Astro.props;
   .main-layout {
     font-size: var(--font-size-1);
   }
-  @media (min-size: 700px) {
+  @media (min-width: 700px) {
     .main-layout {
       font-size: var(--font-size-3);
     }
@@ -108,7 +108,7 @@ const { episode, prev, next } = Astro.props;
     text-transform: uppercase;
     padding: 1em;
   }
-  @media (min-size: 700px) {
+  @media (min-width: 700px) {
     h1 {
       font-size: var(--font-size-7);
     }
@@ -177,10 +177,13 @@ const { episode, prev, next } = Astro.props;
     grid-template-columns: 1fr 1fr;
 
     gap: 0.5em;
-    max-width: max(320px, 70%);
+    max-width: min(50em, 100% - 2em);
     margin-inline: auto;
     padding-inline: 1em;
     margin-block: 1em;
+  }
+  .inter-episode-nav .link {
+    display: block;
   }
   @media (min-width: 700px) {
     .inter-episode-nav {

@@ -11,7 +11,7 @@
 }
 
 .titleLink {
-  font-size: var(--font-size-5, 36px);
+  font-size: var(--font-size-3);
   margin-block-start: 0;
   margin-block-end: 0;
   padding-block-start: 1rem;
@@ -29,7 +29,7 @@
   width: 100%;
 }
 .header span {
-  width: max-content;
+  width: min-content;
 }
 .unofficial {
   color: var(--color-green);
@@ -44,12 +44,12 @@
 }
 @container (min-width: 800px) {
   .titleLink {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "unofficial distractible scoreboard";
   }
 }
-@container (min-width: 1000px) {
+@container (min-width: 1080px) {
   .titleLink {
-    grid-template-columns: 1fr 2fr 1fr;
+    font-size: var(--font-size-5);
   }
 }
