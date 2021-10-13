@@ -135,7 +135,9 @@ const { episode, prev, next } = Astro.props;
     padding: 1em;
   }
   @media (min-width: 700px) {
-    font-size: var(--font-size-5);
+    .roles {
+      font-size: var(--font-size-5);
+    }
   }
   .titles {
     font-size: var(--font-size-3);
@@ -150,7 +152,9 @@ const { episode, prev, next } = Astro.props;
     margin-block: 2em;
   }
   @media (min-width: 700px) {
-    font-size: var(--font-size-5);
+    .titles {
+      font-size: var(--font-size-5);
+    }
   }
   .titles-child {
     background-color: var(--color-black);
