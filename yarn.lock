@@ -79,10 +79,10 @@
     "@snowpack/plugin-svelte" "^3.7.0"
     svelte "^3.35.0"
 
-"@astrojs/renderer-vue@0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@astrojs/renderer-vue/-/renderer-vue-0.1.8.tgz#bee1a6c092696885f3e747c1dced0eb1c115e0a4"
-  integrity sha512-TY4lZ6eJArtUk4XVR23ejsMtFvw4423JsE17SCKociuUcsO0HAVrqcqrAoVYxhyuxSSfFu3vKYVkKnpb/lHxbw==
+"@astrojs/renderer-vue@0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@astrojs/renderer-vue/-/renderer-vue-0.1.9.tgz#a5e35eb2cc3fc29dbeb833310aa3d9de90500c7c"
+  integrity sha512-u+iDawyuY2U0fn6vyiBxC1GGqZ6mq9+myWSzNuEeRxQqvyaKwC81yhREda5zTzWXWj3P2CtTnCQl9Xwh6r/VXA==
   dependencies:
     "@snowpack/plugin-vue" "^2.6.1"
     "@vue/server-renderer" "^3.2.0"
@@ -1105,10 +1105,10 @@ astring@^1.7.4:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.7.5.tgz#a7d47fceaf32b052d33a3d07c511efeec67447ca"
   integrity sha512-lobf6RWXb8c4uZ7Mdq0U12efYmpD1UFnyOWVJPTa3ukqZrMopav+2hdNu0hgBF0JIBFK9QgrBDfwYvh3DFJDAA==
 
-astro@0.20.11:
-  version "0.20.11"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.11.tgz#42316582ddaccce2ab0b003fc265682b1de3ac99"
-  integrity sha512-NpkDbhbJpxQSD7uFjsnXnju8UBYv+kmM6gvI1QJeE9fTLxbbwQmFGV6ip18N3PgV9RMeZTHwJMq9KQod/IfbBA==
+astro@0.20.12:
+  version "0.20.12"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.12.tgz#24f18e9fed95294b77606de3891d40d2852be1bd"
+  integrity sha512-B8DsSoseL5uk+qjge1Us37TBYVNWMWlESZueCzMTIVmaUfgHPEkM14uDL2wPIdRW0SQEv0AHM+LYgofAFgxb8A==
   dependencies:
     "@astrojs/language-server" "^0.7.16"
     "@astrojs/markdown-support" "0.3.1"
@@ -1117,7 +1117,7 @@ astro@0.20.11:
     "@astrojs/renderer-preact" "0.2.2"
     "@astrojs/renderer-react" "0.2.2"
     "@astrojs/renderer-svelte" "0.1.2"
-    "@astrojs/renderer-vue" "0.1.8"
+    "@astrojs/renderer-vue" "0.1.9"
     "@babel/code-frame" "^7.12.13"
     "@babel/core" "^7.14.6"
     "@babel/generator" "^7.13.9"
