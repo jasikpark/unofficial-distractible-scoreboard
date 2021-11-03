@@ -1,0 +1,61 @@
+---
+import { Score } from "@src/episodes.ts";
+import AllTimeScore from "@components/AllTimeScore.astro";
+import { sortScores } from "@src/utils.ts";
+export interface Props {
+  scores: Score[];
+}
+const { scores = [] } = Astro.props as Props;
+const sortedScores = scores.sort(sortScores);
+---
+
+<section>
+  <h1>All Time Scores</h1>
+  <ul>
+    {sortedScores.map( (score, placement) => <AllTimeScore score={score} placement={placement} /> )}
+  </ul>
+</section>
+
+<style>
+  section {
+    color: var(--color-white);
+    background-color: var(--color-black);
+
+    font-size: var(--font-size-1);
+    font-weight: 600;
+    text-transform: uppercase;
+
+    padding: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  @media (min-width: 700px) {
+    section {
+      font-size: var(--font-size-5);
+    }
+  }
+
+  @media (min-width: 1080px) {
+    section {
+      font-size: var(--font-size-7);
+    }
+  }
+
+  section > * + * {
+    padding-top: 0.5em;
+  }
+
+  h1,
+  ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+</style>

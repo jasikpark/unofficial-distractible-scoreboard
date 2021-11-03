@@ -1,0 +1,13 @@
+.FooterLink {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: var(--font-size-1);
+}
+
+@media (min-width: 700px) {
+  .FooterLink {
+    font-size: var(--font-size-3);
+  }
+}

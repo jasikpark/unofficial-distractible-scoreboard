@@ -1,0 +1,16 @@
+[build]
+base = "design/"
+publish = "dist/"
+command = "yarn build"
+
+[dev]
+command = "yarn start --site 'http://localhost:8888'"
+framework = "#custom"
+port = 8888
+targetPort = 3000
+
+[context.branch-deploy]
+command = "yarn build --site $DEPLOY_PRIME_URL"
+
+[context.deploy-preview]
+command = "yarn build --site $DEPLOY_PRIME_URL"

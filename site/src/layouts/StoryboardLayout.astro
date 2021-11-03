@@ -1,0 +1,68 @@
+---
+import HeadCommon from "@components/HeadCommon.astro";
+const paths = (await import("@src/component-links")).default.map(
+  (x) => new URL(`/storyboard/${x}`, Astro.site)
+);
+const { title = "", dark = false } = Astro.props;
+---
+
+<html lang="en" class={`storyboard ${dark ? "dark" : ""}`.trim()}>
+  <head>
+    <HeadCommon {title} />
+  </head>
+  <body>
+    <ul>
+      <li><a href={Astro.site}>{Astro.site}</a></li>
+      {paths.map((p) => <li>
+          <a href={p}>{p}</a>
+        </li>)}
+    </ul>
+    <div>
+      <slot />
+    </div>
+    <div>
+      <slot />
+    </div>
+    <div>
+      <slot />
+    </div>
+    <div>
+      <slot />
+    </div>
+  </body>
+</html>
+
+<style>
+  ul {
+    margin: 5rem auto;
+    width: max-content;
+  }
+  div {
+    contain: layout inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 5rem auto;
+    width: 300px;
+    outline: solid 5px currentColor;
+  }
+  div:nth-of-type(1) {
+    width: 300px;
+  }
+  div:nth-of-type(2) {
+    width: 728px;
+  }
+  div:nth-of-type(3) {
+    width: 1080px;
+  }
+  div:nth-of-type(4) {
+    width: 1440px;
+  }
+  :global(html.storyboard) {
+    color: var(--color-black);
+    background-color: hsl(0, 0%, 89.8%);
+  }
+  :global(html.storyboard.dark) {
+    color: var(--color-white);
+    background-color: hsl(0, 0%, 45%);
+  }
+</style>

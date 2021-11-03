@@ -1,0 +1,11 @@
+.mark {
+  color: var(--color-mark);
+}
+
+.bob {
+  color: var(--color-bob);
+}
+
+.wade {
+  color: var(--color-wade);
+}

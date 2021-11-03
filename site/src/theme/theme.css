@@ -1,0 +1,39 @@
+:root {
+  --font-default: "Montserrat", sans-serif;
+
+  --font-size-1: 1.25rem;
+  --font-size-3: 1.5rem;
+  --font-size-5: 2.25rem;
+  --font-size-7: 3rem;
+
+  --line-height-5: 1.22em;
+
+  --color-green: hsla(78, 91%, 69%, 1);
+  --color-purple: hsla(260, 81%, 67%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+
+  --color-black: hsla(281, 10%, 9%, 1);
+  --color-mark: hsla(360, 85%, 54%, 1);
+  --color-wade: hsla(40, 97%, 55%, 1);
+  --color-bob: hsla(183, 81%, 55%, 1);
+  --color-blurple: hsla(275, 46%, 46.5%, 1);
+  --gradient-blurple: linear-gradient(
+    111.21deg,
+    #ab3fcd 9.58%,
+    #9540bd 20.29%,
+    #7540a6 46.15%,
+    #6850b0 67.28%,
+    #5466b4 84.75%
+  );
+}
+
+html {
+  font-family: var(--font-default);
+}
+
+:focus {
+  border-radius: 0.25em;
+
+  outline: max(1px, 0.1em) solid currentColor;
+  outline-offset: 0.25em;
+}

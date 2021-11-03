@@ -1,0 +1,59 @@
+---
+import styles from "@components/FooterLink.module.css";
+import characters from "@components/characters.module.css";
+import MainFooter from "@components/MainFooter.astro";
+import { Score } from "@src/episodes.ts";
+import { formatScore, sortScores } from "@src/utils.ts";
+
+export interface Props {
+  scores: Score[];
+}
+const { scores = [] } = Astro.props as Props;
+
+const [first, second, third] = scores.sort(sortScores);
+const getCharacterStyle = ({ character }: Score) =>
+  characters[character.toLowerCase()];
+---
+
+<div class="end-results">
+  <div>
+    Winner: <span class={getCharacterStyle(first)}>{first.character}</span>
+    <br /> With <span class={getCharacterStyle(first)}
+      >{formatScore(first.score)}</span> points!
+  </div>
+  <div>
+    <span class={getCharacterStyle(second)}>{second.character}</span> comes in second
+    with
+    <span class={getCharacterStyle(second)}>{formatScore(second.score)}</span> points
+  </div>
+  {third && <div>
+      (Also <span class={getCharacterStyle(third)}>{third.character}</span> got <span class={getCharacterStyle(third)}>
+        {formatScore(third.score)}
+      </span> points??)
+    </div>}
+</div>
+
+<style>
+  .end-results {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: var(--font-size-3);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .end-results > * + * {
+    font-size: var(--font-size-1);
+  }
+  @media (min-width: 700px) {
+    .end-results {
+      font-size: var(--font-size-5);
+    }
+
+    .end-results > * + * {
+      font-size: var(--font-size-3);
+    }
+  }
+</style>

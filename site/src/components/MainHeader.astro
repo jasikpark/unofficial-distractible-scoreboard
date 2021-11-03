@@ -1,0 +1,17 @@
+---
+import styles from "./MainHeader.module.css";
+const { header, titleLink, unofficial, distractible, scoreboard } = styles;
+---
+
+<header class={header}>
+  <h1>
+    <a class={titleLink} href="/">
+      <span class={unofficial}>Unofficial</span>
+      <img
+        class={distractible}
+        src="/DISTRACTABLE-Logo.png"
+        alt="Distractible" />
+      <span class={scoreboard}>Scoreboard</span>
+    </a>
+  </h1>
+</header>

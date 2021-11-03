@@ -6,4 +6,5 @@ export default {
     "@theme": "./src/theme",
   },
   plugins: ["@snowpack/plugin-postcss"],
+  workspaceRoot: "../",
 };

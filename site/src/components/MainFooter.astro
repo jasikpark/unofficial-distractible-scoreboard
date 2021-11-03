@@ -1,0 +1,51 @@
+---
+import FL from "@components/FooterLink.module.css";
+const { FooterLink } = FL;
+---
+
+<footer>
+  <ul>
+    <li><a class={FooterLink} href="#">Back to top</a></li>
+    <slot />
+  </ul>
+  <span>
+    This Site is in no way affiliated or attempting to represent itself as the
+    Distractible podcast.
+  </span>
+</footer>
+
+<style>
+  footer {
+    font-family: var(--font-default);
+    background-color: var(--color-black);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-white);
+    padding-block-start: 2rem;
+    padding-block-end: 2rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  a {
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  span {
+    font-weight: 400;
+  }
+</style>

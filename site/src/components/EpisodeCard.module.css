@@ -1,0 +1,59 @@
+.EpisodeCard {
+  contain: layout inline-size;
+}
+
+.EpisodeCardContent {
+  font-size: var(--font-size-1);
+
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  box-shadow: 16px 16px 0px 4px #000000;
+  padding: 1.5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  line-height: var(--line-height-5);
+}
+
+@media (min-width: 700px) {
+  .EpisodeCardContent {
+    font-size: var(--font-size-3);
+  }
+}
+
+@media (min-width: 1080px) {
+  .EpisodeCardContent {
+    font-size: var(--font-size-5);
+  }
+}
+
+.EpisodeCardContent > * + * {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+.Time {
+  display: block;
+  font-size: var(--font-size-3);
+}
+
+.ScoresList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.Title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.Title a {
+  color: var(--color-black);
+  text-decoration: underline;
+}

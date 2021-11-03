@@ -1,0 +1,33 @@
+---
+import "design/theme/theme.css";
+//import "modern-normalize/modern-normalize.css";
+import "tailwindcss/dist/base.css";
+const { title = "" } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{title ? `${title} ` : ""} Unofficial Distractible Scoreboard</title>
+
+<script type="module">
+  import { cqfill } from "https://unpkg.com/cqfill@0.6.0/export/cqfill.mjs";
+  cqfill();
+</script>
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+  rel="stylesheet" />
+
+<script
+  async
+  src="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.0.1/dist/loading-attribute-polyfill.umd.js"
+  integrity="sha256-7ivnAsMdAxUWanM739GedGTMaJf+28hC2WZQrS7FYIc="
+  crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.0.1/dist/loading-attribute-polyfill.css"
+  integrity="sha256-OSpIdISpYCmixnCVhqTBjKjXCRSZVHEP0hvdixrH+bg="
+  crossorigin="anonymous" />
