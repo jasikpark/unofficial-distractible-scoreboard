@@ -5,8 +5,8 @@ const getCharacterStyle = (character: string) =>
 const { name, class: className = "", block = false } = Astro.props;
 ---
 
-{block ? <div class={`${getCharacterStyle(name)} ${className}`.trim()}>
-    {name}
-  </div> : <span class={`${getCharacterStyle(name)} ${className}`.trim()}>
-    {name}
-  </span>}
+{block ? (
+  <div class={`${getCharacterStyle(name)} ${className}`.trim()}>{name}</div>
+) : (
+  <span class={`${getCharacterStyle(name)} ${className}`.trim()}>{name}</span>
+)}

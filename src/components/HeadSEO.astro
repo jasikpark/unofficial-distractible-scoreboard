@@ -22,7 +22,8 @@ const { content = {}, canonicalURL } = Astro.props;
 <meta property="og:image:alt" content={imageAlt} /> -->
 <meta
   property="og:description"
-  content={content.description ? content.description : SITE.description} />
+  content={content.description ? content.description : SITE.description}
+/>
 <meta property="og:site_name" content={SITE.title} />
 
 <!-- Twitter Tags -->
@@ -31,7 +32,8 @@ const { content = {}, canonicalURL } = Astro.props;
 <meta name="twitter:title" content={content.title ?? SITE.title} />
 <meta
   name="twitter:description"
-  content={content.description ? content.description : SITE.description} />
+  content={content.description ? content.description : SITE.description}
+/>
 <!-- <meta name="twitter:image" content={canonicalImageSrc} /> -->
 <!-- <meta name="twitter:image:alt" content={imageAlt} /> -->
 

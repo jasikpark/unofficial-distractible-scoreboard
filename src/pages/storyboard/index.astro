@@ -8,9 +8,11 @@ const paths = (await import("@src/component-links")).default.map(
 <head><HeadCommon /></head>
 <body>
   <ul>
-    {paths.map((p) => <li>
+    {paths.map((p) => (
+      <li>
         <a href={p}>{p}</a>
-      </li>)}
+      </li>
+    ))}
   </ul>
 </body>
 

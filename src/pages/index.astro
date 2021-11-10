@@ -35,9 +35,11 @@ const allTimeScores = episodes.reduce(
   <Intro />
   <AllTimeScoreboard scores={allTimeScores} />
   <ul id="episodes" class="episodes">
-    {episodes.map((episode) => <li>
+    {episodes.map((episode) => (
+      <li>
         <EpisodeCard class="episode" episode={episode} />
-      </li>)}
+      </li>
+    ))}
   </ul>
 </MainLayout>
 

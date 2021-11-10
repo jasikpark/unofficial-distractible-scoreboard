@@ -12,7 +12,9 @@ const sortedScores = scores.sort(sortScores);
 <section>
   <h1>All Time Scores</h1>
   <ul>
-    {sortedScores.map( (score, placement) => <AllTimeScore score={score} placement={placement} /> )}
+    {sortedScores.map((score, placement) => (
+      <AllTimeScore score={score} placement={placement} />
+    ))}
   </ul>
 </section>
 

@@ -13,9 +13,11 @@ const { title = "", dark = false } = Astro.props;
   <body>
     <ul>
       <li><a href={Astro.site}>{Astro.site}</a></li>
-      {paths.map((p) => <li>
+      {paths.map((p) => (
+        <li>
           <a href={p}>{p}</a>
-        </li>)}
+        </li>
+      ))}
     </ul>
     <div>
       <slot />

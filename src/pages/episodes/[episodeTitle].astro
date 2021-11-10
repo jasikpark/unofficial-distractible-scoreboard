@@ -30,7 +30,8 @@ const { episode, prev, next } = Astro.props;
   <HeadSEO
     slot="head"
     canonicalURL={Astro.request.canonicalURL}
-    content={episode} />
+    content={episode}
+  />
   <div class="back-to-episodes">
     <a href={`${Astro.site}#episodes`}>‹ Episodes</a>
   </div>
@@ -41,39 +42,60 @@ const { episode, prev, next } = Astro.props;
       <div>Host: <Character name={episode.host} /></div>
       <div>
         Presenters: <Character name={episode.presenters[0]} /> &amp; <Character
-          name={episode.presenters[1]} />
+          name={episode.presenters[1]}
+        />
       </div>
     </div>
   </section>
-  {episode?.titles ? <section class="titles">
-      {episode.titles.map((title) => <div>
+  {episode?.titles ? (
+    <section class="titles">
+      {episode.titles.map((title) => (
+        <div>
           <Character class="titles-child" block={true} name={title.character} />
-          {Array.isArray(title.title) ? title.title.map( (title) => <div class="titles-child">
-                  {title}
-                </div> ) : <div class="titles-child">{title.title}</div>}
-        </div>)}
-    </section> : ""}
-  {episode?.timestamps ? <section class="timestamps">
+          {Array.isArray(title.title) ? (
+            title.title.map((title) => <div class="titles-child">{title}</div>)
+          ) : (
+            <div class="titles-child">{title.title}</div>
+          )}
+        </div>
+      ))}
+    </section>
+  ) : (
+    ""
+  )}
+  {episode?.timestamps ? (
+    <section class="timestamps">
       <ul>
-        {episode.timestamps.map((timestamp) => <li>
-            this is an episode: {JSON.stringify(timestamp, null, 2)}
-          </li>)}
+        {episode.timestamps.map((timestamp) => (
+          <li>this is an episode: {JSON.stringify(timestamp, null, 2)}</li>
+        ))}
       </ul>
-    </section> : <section class="content">
+    </section>
+  ) : (
+    <section class="content">
       <Fragment>
         <Markdown content={episode.astro.source} />
       </Fragment>
-    </section>}
+    </section>
+  )}
   <div id="episode-next-prev" class="inter-episode-nav">
     <div>
-      {prev ? <EpisodeLink class="link" rel="prev" episode={prev}>
+      {prev ? (
+        <EpisodeLink class="link" rel="prev" episode={prev}>
           Previous Episode:{" "}
-        </EpisodeLink> : ""}
+        </EpisodeLink>
+      ) : (
+        ""
+      )}
     </div>
     <div>
-      {next ? <EpisodeLink class="link" rel="next" episode={next}>
+      {next ? (
+        <EpisodeLink class="link" rel="next" episode={next}>
           Next Episode:{" "}
-        </EpisodeLink> : ""}
+        </EpisodeLink>
+      ) : (
+        ""
+      )}
     </div>
   </div>
   {episode.scores ? <FinalScores scores={episode.scores} /> : ""}
@@ -82,7 +104,8 @@ const { episode, prev, next } = Astro.props;
       <a
         class={styles.FooterLink}
         href="https://github.com/jasikpark/unofficial-distractible-scoreboard/"
-        >Edit on Github</a>
+        >Edit on Github</a
+      >
     </li>
   </Fragment>
 </MainLayout>

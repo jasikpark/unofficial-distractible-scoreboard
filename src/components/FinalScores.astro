@@ -19,18 +19,21 @@ const getCharacterStyle = ({ character }: Score) =>
   <div>
     Winner: <span class={getCharacterStyle(first)}>{first.character}</span>
     <br /> With <span class={getCharacterStyle(first)}
-      >{formatScore(first.score)}</span> points!
+      >{formatScore(first.score)}</span
+    > points!
   </div>
   <div>
     <span class={getCharacterStyle(second)}>{second.character}</span> comes in second
     with
     <span class={getCharacterStyle(second)}>{formatScore(second.score)}</span> points
   </div>
-  {third && <div>
-      (Also <span class={getCharacterStyle(third)}>{third.character}</span> got <span class={getCharacterStyle(third)}>
-        {formatScore(third.score)}
-      </span> points??)
-    </div>}
+  {third && (
+    <div>
+      (Also <span class={getCharacterStyle(third)}>{third.character}</span> got{" "}
+      <span class={getCharacterStyle(third)}>{formatScore(third.score)}</span>{" "}
+      points??)
+    </div>
+  )}
 </div>
 
 <style>
