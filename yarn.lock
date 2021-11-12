@@ -1707,10 +1707,10 @@ cosmiconfig@^7.0.1:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-cqfill@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/cqfill/-/cqfill-0.6.0.tgz#7d5a1c17c0bde7bb6b60ffa6a57096371c5c9897"
-  integrity sha512-hX4FqIiwjlLWu032W9oLaUcLe/3L+udWFUi6YYwjRK4RGQANwg3UmfYbEDC9HS+n1XD6/Rbtr45xrmfQOCylkg==
+cqfill@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/cqfill/-/cqfill-0.6.1.tgz#43cbf0ce451dea198eacafa6faf315db6d58b61b"
+  integrity sha512-IkXi2BjKsGVRa/atik6ZRvizX8RaqbHnt5vRohrBPxV9sxIulrAxYpaBlSmiAnNKQvk76LKrxYOvdjlBdzogxg==
 
 cross-spawn@^7.0.3:
   version "7.0.3"
