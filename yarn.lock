@@ -39,12 +39,21 @@
     unist-util-map "^3.0.0"
     unist-util-visit "^4.0.0"
 
-"@astrojs/parser@0.20.2", "@astrojs/parser@^0.20.2":
+"@astrojs/parser@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@astrojs/parser/-/parser-0.20.2.tgz#93747172c8acd738cad4a4c8240c5c1bf73d49de"
   integrity sha512-HLATK/Bezd1lX/ph9WmMmVGUa/m79BC8bdjAbVE2iCPDnIeWSpPiERA5kYfRtxCcXp/EySllxECccHtrvT3hCQ==
   dependencies:
     acorn "^7.4.0"
+    locate-character "^2.0.5"
+    magic-string "^0.25.3"
+
+"@astrojs/parser@^0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/parser/-/parser-0.22.0.tgz#a717d4c2d7bb5080ae4c67077aec432cb8bce835"
+  integrity sha512-H3YpRaVuW5mNPrcEEMzfNQla10TX6c/gQ73RrGK089C6yie3jSjIz0pw292E26larYC0zAlNLGH+IwhlYFPklA==
+  dependencies:
+    acorn "^8.6.0"
     locate-character "^2.0.5"
     magic-string "^0.25.3"
 
@@ -959,6 +968,11 @@ acorn@^8.5.0:
   version "8.5.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.5.0.tgz#4512ccb99b3698c752591e9bb4472e38ad43cee2"
   integrity sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q==
+
+acorn@^8.6.0:
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.0.tgz#90951fde0f8f09df93549481e5fc141445b791cf"
+  integrity sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==
 
 address@^1.0.1:
   version "1.1.2"
@@ -4725,12 +4739,12 @@ preact@^10.5.13:
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.14.tgz#0b14a2eefba3c10a57116b90d1a65f5f00cd2701"
   integrity sha512-KojoltCrshZ099ksUZ2OQKfbH66uquFoxHSbnwKbTJHeQNvx42EmC7wQVWNuDt6vC5s3nudRHFtKbpY4ijKlaQ==
 
-prettier-plugin-astro@0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.0.11.tgz#7c6b422616502ed1ea32de52763594e36fbf653e"
-  integrity sha512-6y2XMRi4FIF0Z8milimHBM93nXZIUpTlkzoSW+wOY0olBvW9s+uY5HTqq0e63ML5mS6f0tJk3tonWIrxH9znpQ==
+prettier-plugin-astro@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-astro/-/prettier-plugin-astro-0.0.12.tgz#5f2ece3e3d18c4cd8660b19ebf39888e159d8eae"
+  integrity sha512-ZSNvHuyQ+fxgqA4qoiOf2FvN8FdWcBrAmnik3gPL466TFtMcOV2hVNVVErBcnG/qMyPf7WLwPvBLtTyWpDEUHg==
   dependencies:
-    "@astrojs/parser" "^0.20.2"
+    "@astrojs/parser" "^0.22.0"
     prettier "^2.4.1"
     sass-formatter "^0.7.2"
 
