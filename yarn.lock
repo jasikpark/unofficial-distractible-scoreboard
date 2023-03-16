@@ -1043,10 +1043,10 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-any-date-parser@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/any-date-parser/-/any-date-parser-1.5.1.tgz#152db2bbc8c9b8f8715f58952ae09657e27d008f"
-  integrity sha512-3fHJDprh78tWHXDqQ15iLbk/VDMsCq9ih0YTS8oAF8N7BKqurjRQkG7ZI4d+Cknh0TZ3aDqQ5WQvO2QGVLDK7A==
+any-date-parser@1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/any-date-parser/-/any-date-parser-1.5.4.tgz#3c462f3a419b7147a88a8c7cab91da4193ff680b"
+  integrity sha512-S4gl9UmXNk9XXSQxp5w5harUD6aM0fepyL3dZM/B3znX57sWf792hS2UvvCFIHECfpsqfKbQ+cqWBky4AKyRIg==
 
 anymatch@~3.1.2:
   version "3.1.2"
