@@ -21,7 +21,7 @@
     "@snowpack/plugin-postcss": "1.4.3",
     "any-date-parser": "1.5.1",
     "cqfill": "0.6.1",
-    "slug": "5.1.0",
+    "slug": "8.2.2",
     "tailwindcss": "2.2.19"
   },
   "postcss": {

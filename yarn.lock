@@ -5389,10 +5389,10 @@ slash@^4.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-4.0.0.tgz#2422372176c4c6c5addb5e2ada885af984b396a7"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
 
-slug@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/slug/-/slug-5.1.0.tgz#8a7e30ca1c3a6dc40cf74e269750913a865edb0b"
-  integrity sha512-IS39jKR6m+puU8zWgH6ruwx1sfzFNJ6Ai5PKIlUqd0X8C3ca7PB49Cvm0uayqgEt1jgaojO2wWEsQJngnh7fDA==
+slug@8.2.2:
+  version "8.2.2"
+  resolved "https://registry.yarnpkg.com/slug/-/slug-8.2.2.tgz#33b019a857a11fc4773c1e9a9f60e3da651a9e5d"
+  integrity sha512-5ByW6qXqPeG0Tmlkh24JhdXhvQsbaJSjVr3GgGxUV0BSskZKKBZZfFWxezap8+fh1vxBN9GVbqI1V6nqAFxlBg==
 
 smart-buffer@^4.1.0:
   version "4.2.0"
