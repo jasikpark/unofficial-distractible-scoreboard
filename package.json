@@ -15,7 +15,7 @@
     "astro": "0.20.12",
     "html-validate": "7.14.0",
     "prettier": "2.4.1",
-    "prettier-plugin-astro": "0.0.11"
+    "prettier-plugin-astro": "0.8.0"
   },
   "dependencies": {
     "@snowpack/plugin-postcss": "1.4.3",
